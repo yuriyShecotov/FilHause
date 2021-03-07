@@ -1,0 +1,53 @@
+.titel__slaider
+	position: relative
+
+	.slaider__img
+		position: relative
+		a
+			position: absolute
+			bottom: 16px
+			left: 16px
+			text-decoration: none
+			color: $gray
+	/* Стрелка */
+	.slick-arrow
+		position: absolute
+		top: 16px
+		z-index: 10
+		width: 62px
+		height: 62px
+		font-size: 0
+		padding: 0
+		border: none
+		background-color: transparent
+		outline: none
+	.slick-arrow:active 
+		border: none
+		outline: none
+		background-color: transparent
+	/* Стрелка влево */
+	.slick-prev
+		right: 106px
+		background: url(../img/icons/button_L.svg) 0 0 / 100% no-repeat 
+	/* Стрелка вправо */
+	.slick-next
+		right: 16px
+		background: url(../img/icons/button_R.svg) 0 0 / 100% no-repeat 
+		/* Стрелка не активная */
+	.slick-arrow.slick-disabled
+	/* Точки (булиты) */
+	.slick-dots
+	.slick-dots 
+		display: flex
+		position: absolute
+		right: 16px
+		bottom: 16px
+		font-size: 0
+		li
+	/* Активная точка */
+	.slick-dots 
+		li.slick-active
+	/* Элемент точки */
+	.slick-dots 
+		li 
+			button

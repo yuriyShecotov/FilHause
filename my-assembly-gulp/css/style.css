@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Akrobat';
+  src: url("../fonts/Akrobat-Bold.woff2") format("woff2"), url("../fonts/Akrobat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  src: url("../fonts/Akrobat-Regular.woff2") format("woff2"), url("../fonts/Akrobat-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 16px;
+  grid-template-areas: "header header header header header header header header header header header header" "titel titel titel titel titel titel titel titel titel titel titel titel" "filter filter filter filter card card card card card card card card" "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.contacts {
+  grid-area: header;
+}
+
+.titel {
+  grid-area: titel;
+}
+
+.filter {
+  grid-area: filter;
+}
+
+.card {
+  grid-area: card;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #272B34;
+  font-size: 18px;
+  background-color: #E5E5E5;
+  font-family: Akrobat;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contacts {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 16px;
+  background-color: #E5E5E5;
+}
+
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialNetwork a {
+  margin-left: 36px;
+}
+
+.contacts_socialNetwork {
+  padding-right: 42px;
+}
+
+.phone a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #272B34 !important;
+  text-decoration: none;
+}
+
+.phone a img {
+  margin-right: 4px;
+}
+
+.titel__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 0 16px 32px 16px;
+}
+
+.titel__text h1 {
+  font-size: 90px;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+}
+
+.titel__text p {
+  font-size: 36px;
+  font-variant: 500px;
+  -webkit-font-feature-settings: 'salt';
+          font-feature-settings: 'salt';
+}
+
+.titel__text p span {
+  font-weight: bold;
+}
+
+.container__titel {
+  margin-top: 32px;
+}
+
+.slaider__img img {
+  max-width: 100%;
+}
+
+.titel__slaider {
+  position: relative;
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+
+.titel__slaider .slaider__img {
+  position: relative;
+}
+
+.titel__slaider .slaider__img a {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  text-decoration: none;
+  color: #E5E5E5;
+}
+
+.titel__slaider .slick-arrow {
+  position: absolute;
+  top: 16px;
+  z-index: 10;
+  width: 62px;
+  height: 62px;
+  font-size: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.titel__slaider .slick-arrow:active {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.titel__slaider .slick-prev {
+  right: 106px;
+  background: url(../img/icons/button_L.svg) 0 0/100% no-repeat;
+}
+
+.titel__slaider .slick-next {
+  right: 16px;
+  background: url(../img/icons/button_R.svg) 0 0/100% no-repeat;
+  /* Стрелка не активная */
+}
+
+.titel__slaider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-size: 0;
+}
+
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+
+.slick-slide {
+  outline: none;
+}
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+/* Стрелка влево */
+
+/* Стрелка вправо */
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
+@media all and (-ms-high-contrast: none) {
+  container {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .contacts {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+  }
+
+  .titel {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+  }
+
+  .filter {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+
+  .card {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 8;
+  }
+
+  .footer {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+  }
+}

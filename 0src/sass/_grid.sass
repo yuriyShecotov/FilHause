@@ -1,0 +1,61 @@
+.container 
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+  gap: 0px 16px
+  grid-template-areas: "header header header header header header header header header header header header" "titel titel titel titel titel titel titel titel titel titel titel titel" "filter filter filter filter card card card card card card card card" "footer footer footer footer footer footer footer footer footer footer footer footer"
+
+.contacts 
+  grid-area: header 
+
+.titel 
+  grid-area: titel 
+
+.filter 
+  grid-area: filter 
+
+.card 
+  grid-area: card 
+
+.footer 
+  grid-area: footer 
+
+@media all and (-ms-high-contrast:none) 
+  container 
+    display: -ms-grid
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    -ms-grid-rows: 1fr 1fr 1fr 1fr
+  
+
+  .contacts 
+    -ms-grid-row: 1
+    -ms-grid-row-span: 1
+    -ms-grid-column: 1
+    -ms-grid-column-span: 12
+      
+
+  .titel 
+    -ms-grid-row: 2
+    -ms-grid-row-span: 1
+    -ms-grid-column: 1
+    -ms-grid-column-span: 12
+      
+
+  .filter 
+    -ms-grid-row: 3
+    -ms-grid-row-span: 1
+    -ms-grid-column: 1
+    -ms-grid-column-span: 4
+  
+
+  .card 
+    -ms-grid-row: 3
+    -ms-grid-row-span: 1
+    -ms-grid-column: 5
+    -ms-grid-column-span: 8
+  
+
+  .footer 
+    -ms-grid-row: 4
+    -ms-grid-row-span: 1
+    -ms-grid-column: 1
+    -ms-grid-column-span: 12
