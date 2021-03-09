@@ -21,33 +21,42 @@
 		border: none
 		background-color: transparent
 		outline: none
-	.slick-arrow:active 
-		border: none
-		outline: none
-		background-color: transparent
-	/* Стрелка влево */
+
 	.slick-prev
 		right: 106px
 		background: url(../img/icons/button_L.svg) 0 0 / 100% no-repeat 
+	.slick-prev:hover	
+		background: url(../img/icons/button_L_Hover.svg) 0 0 / 100% no-repeat
 	/* Стрелка вправо */
 	.slick-next
 		right: 16px
 		background: url(../img/icons/button_R.svg) 0 0 / 100% no-repeat 
+	.slick-next:hover
+		background: url(../img/icons/button_R_Hover.svg) 0 0 / 100% no-repeat 
 		/* Стрелка не активная */
 	.slick-arrow.slick-disabled
-	/* Точки (булиты) */
-	.slick-dots
+	/* Элемент точки */
 	.slick-dots 
 		display: flex
 		position: absolute
-		right: 16px
+		right: 24px
 		bottom: 16px
-		font-size: 0
 		li
-	/* Активная точка */
-	.slick-dots 
-		li.slick-active
-	/* Элемент точки */
-	.slick-dots 
-		li 
+			list-style: none
+			margin: 0 4px
 			button
+				font-size: 0
+				width: 12px
+				height: 12px
+				background-color: transparent
+				border-radius: 50%
+				border: 3px solid $gray	
+		.slick-active
+			button
+				border: 3px solid $light_grin
+.slaider__img
+	a
+		font-size: 26px
+		text-transform: uppercase
+	a:hover
+   	text-decoration: underline

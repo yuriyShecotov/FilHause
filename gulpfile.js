@@ -43,9 +43,9 @@ let	uglify = require("gulp-uglify-es").default; /*оптимизация js*/
 let	imagemin = require('gulp-imagemin'); /*оптимизация ing*/
 let	webp = require('gulp-webp'); /*создоём формат изоброжений webp*/
 let	webphtml = require('gulp-webp-html'); /*подключаем к html webp*/
-let	webpcss = require('gulp-webpcss'); /*подключаем к css webp*/
-let	ttf2woff = require('gulp-ttf2woff'); /*подключаем к css webp*/
-let	ttf2woff2 = require('gulp-ttf2woff2'); /*подключаем к css webp*/
+// let	webpcss = require('gulp-webpcss'); /*подключаем к css webp*/
+let ttf2woff = require('gulp-ttf2woff'); /**/
+let ttf2woff2 = require('gulp-ttf2woff2'); /**/
 
 
 /*Функции*/
@@ -86,7 +86,7 @@ let	ttf2woff2 = require('gulp-ttf2woff2'); /*подключаем к css webp*/
 					cascade: true
 				})
 			)
-			.pipe(webpcss())
+			// .pipe(webpcss())
 			.pipe(dest(path.build.css))  /*пашем в папку проекта .css не жатый*/
 			.pipe(clean_css())          /*чистем и минимезируем css*/
 			/*переименовываем в .min.css*/
