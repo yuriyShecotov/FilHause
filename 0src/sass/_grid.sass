@@ -1,58 +1,43 @@
-.container 
+.grid-container 
   display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-  gap: 0px 16px
-  grid-template-areas: "header header header header header header header header header header header header" "titel titel titel titel titel titel titel titel titel titel titel titel" "filter filter filter filter card card card card card card card card" "footer footer footer footer footer footer footer footer footer footer footer footer"
+  gap: 0px 0px
+  grid-template-areas: "header header header header header header header header header header header header" "titel titel titel titel titel titel titel titel titel titel titel titel" "content content content content content content content content content content content content" "footer footer footer footer footer footer footer footer footer footer footer footer"
 
-.contacts 
-  grid-area: header 
+.contacts  
+	grid-area: header
 
 .titel 
-  grid-area: titel 
+	grid-area: titel
 
-.filter 
-  grid-area: filter 
-
-.card 
-  grid-area: card 
+.content 
+  grid-area: content
 
 .footer 
-  grid-area: footer 
+	grid-area: footer
 
 @media all and (-ms-high-contrast:none) 
-  container 
+  .grid-container 
     display: -ms-grid
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    -ms-grid-rows: 1fr 1fr 1fr 1fr
-  
 
-  .contacts 
+  .header 
     -ms-grid-row: 1
     -ms-grid-row-span: 1
     -ms-grid-column: 1
     -ms-grid-column-span: 12
-      
 
   .titel 
     -ms-grid-row: 2
     -ms-grid-row-span: 1
     -ms-grid-column: 1
     -ms-grid-column-span: 12
-      
 
-  .filter 
+  .content 
     -ms-grid-row: 3
     -ms-grid-row-span: 1
     -ms-grid-column: 1
-    -ms-grid-column-span: 4
-  
-
-  .card 
-    -ms-grid-row: 3
-    -ms-grid-row-span: 1
-    -ms-grid-column: 5
-    -ms-grid-column-span: 8
-  
+    -ms-grid-column-span: 12
 
   .footer 
     -ms-grid-row: 4

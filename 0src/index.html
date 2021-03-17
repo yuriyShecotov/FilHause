@@ -9,44 +9,17 @@
 </head>
 <html>
 	<body>
+		
 		<div class="container">
-			<header class="container__contacts contacts">
-				<div class="contacts__logo">
-					<a rel="stylesheet" href="/"><img src="/img/icons/logo.svg" alt="FilHause"></a>
-				</div>
-				<div class="contacts__link">
-					<div class="contacts__socialnetwork socialnetwork">
-						<a rel="stylesheet" href="#"><img src="/img/icons/telegram.svg" alt="telegram"></a>
-						<a rel="stylesheet" href="#"><img src="/img/icons/instagram.svg" alt="instagram"></a>
-						<a rel="stylesheet" href="#"><img src="/img/icons/whatsap.svg" alt="whatsap"></a>
-					</div>
-					<div class="contacts__phone phone">
-						<a href="tel:+79998095605"><img src="img/icons/phone.svg" alt="Телефон"><span>+7 999 809 56 05</span></a>
-					</div>
-				</div>
-			</header>
+			@@include('_header.html')
 			<!-- Title -->
-			<section class="container__titel titel">
-				<div class="titel__text">
-					<h1>Производство домов</h1>
-					<p>из клeёного <span>бруса</span><br>
-				и оцилиндрованного <span>бревна</span></p></div>
-				<!-- Slaider_Title -->
-				<div class="titel__slaider slaider">
-					<div class="slaider__img"><a href="#">проект БК-124</a><img src="/img/slaider/filhause1.jpg" alt=""></div>
-					<div class="slaider__img"><a href="#">проект БК-245</a><img src="/img/slaider/filhause2.jpg" alt=""></div>
-					<div class="slaider__img"><a href="#">проект БК-124</a><img src="/img/slaider/filhause1.jpg" alt=""></div>
-					<div class="slaider__img"><a href="#">проект БК-245</a><img src="/img/slaider/filhause2.jpg" alt=""></div>
-				</div>
-				
-			</section>
-			<!-- Filter -->
-			<asige class="content__filter filter">3</asige>
-			<!-- Card -->
-			<section class="content__card card">4</section>
-			<footer class="footer">5</footer>
+			@@include('_title.html')
+			<!-- Content -->
+			@@include('_content.html')
+			<!-- Footer -->
+			@@include('_Footer.html')
+		</div>
 			<!-- Script -->
-			</div>
 			<script type="text/javascript" src="/js/script.js"></script>
 	</body>
 </html>
