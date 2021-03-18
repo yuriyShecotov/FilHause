@@ -17,22 +17,32 @@
 			
 .container__titel
 	margin-top: 189px
-.slaider__img
-	img
-		max-width: 100%
+		
 
-		/*Slaider*/
+/*Slaider*/
 .titel__slaider
 	position: relative
-
+	.slick-list 
+		overflow: hidden
+	.slick-track
+		display: flex
 	.slaider__img
 		position: relative
+		img
+			max-width: 100%
 		a
+			font-size: 36px
+			text-transform: uppercase
+			padding: 4px 8px
+			border-radius: 5px
+			backdrop-filter: blur(2px)
 			position: absolute
 			bottom: 16px
 			left: 16px
 			text-decoration: none
 			color: $gray
+		a:hover
+			color: $light_grin_Hover
 	/* Стрелка */
 	.slick-arrow
 		position: absolute
@@ -78,13 +88,4 @@
 		.slick-active
 			button
 				border: 3px solid $light_grin
-.slaider__img
-	a
-		// background: $light_black_blur
-		font-size: 36px
-		text-transform: uppercase
-		padding: 4px 8px
-		border-radius: 5px
-		backdrop-filter: blur(2px)
-	a:hover
-   	color: $light_grin_Hover
+

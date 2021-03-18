@@ -149,10 +149,7 @@ body {
   margin-top: 189px;
 }
 
-.slaider__img img {
-  max-width: 100%;
-  /*Slaider*/
-}
+/*Slaider*/
 
 .titel__slaider {
   position: relative;
@@ -161,16 +158,40 @@ body {
   /* Элемент точки */
 }
 
+.titel__slaider .slick-list {
+  overflow: hidden;
+}
+
+.titel__slaider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .titel__slaider .slaider__img {
   position: relative;
 }
 
+.titel__slaider .slaider__img img {
+  max-width: 100%;
+}
+
 .titel__slaider .slaider__img a {
+  font-size: 36px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   position: absolute;
   bottom: 16px;
   left: 16px;
   text-decoration: none;
   color: #E5E5E5;
+}
+
+.titel__slaider .slaider__img a:hover {
+  color: #5eac19c7;
 }
 
 .titel__slaider .slick-arrow {
@@ -231,67 +252,6 @@ body {
 .titel__slaider .slick-dots .slick-active button {
   border: 3px solid #5DAC19;
 }
-
-.slaider__img a {
-  font-size: 36px;
-  text-transform: uppercase;
-  padding: 4px 8px;
-  border-radius: 5px;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-}
-
-.slaider__img a:hover {
-  color: #5eac19c7;
-}
-
-/* Слайдер */
-
-/* Слайдер запущен */
-
-/* Слайдер с точками */
-
-/* Ограничивающая оболочка */
-
-.slick-list {
-  overflow: hidden;
-}
-
-/* Лента слайдов */
-
-.slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* Слайд */
-
-.slick-slide {
-  outline: none;
-}
-
-/* Слайд активный (показывается) */
-
-/* Слайд основной */
-
-/* Слайд по центру */
-
-/* Клонированный слайд */
-
-/* Стрелка */
-
-/* Стрелка влево */
-
-/* Стрелка вправо */
-
-/* Стрелка не активная */
-
-/* Точки (булиты) */
-
-/* Активная точка */
-
-/* Элемент точки */
 
 .content {
   margin: 0px 16px;
@@ -366,7 +326,7 @@ body {
   margin-bottom: 8px;
 }
 
-.card {
+.card .card__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,104 +334,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  position: relative;
-  /* Стрелка */
-  /* Стрелка вправо */
-  /* Элемент точки */
-}
-
-.card .card__conteiner:nth-child(odd) {
-  margin-right: 16px;
-}
-
-.card .card__conteiner:nth-child(even) {
-  margin-left: 16px;
-}
-
-.card .card__conteiner {
-  width: 50%;
-  max-width: 396px;
-  overflow: hidden;
-}
-
-.card .card__conteiner .card__slider {
-  position: relative;
-}
-
-.card .card__conteiner .card__slider .card__img {
-  max-height: 196px;
-}
-
-.card .card__conteiner .card__slider .card__img img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card .slaider__img {
-  position: relative;
-}
-
-.card .slick-arrow {
-  position: absolute;
-  top: 0px;
-  z-index: 10;
-  width: 48px;
-  height: 48px;
-  font-size: 0;
-  padding: 0;
-  border: none;
-  background-color: #272b34;
-  outline: none;
-}
-
-.card .slick-prev {
-  right: 64px;
-  background: url(../img/icons/button_L.svg) 0 0/100% no-repeat;
-}
-
-.card .slick-prev:hover {
-  background: url(../img/icons/button_L_Hover.svg) 0 0/100% no-repeat;
-}
-
-.card .slick-next {
-  right: 0px;
-  background: url(../img/icons/button_R.svg) 0 0/100% no-repeat;
-}
-
-.card .slick-next:hover {
-  background: url(../img/icons/button_R_Hover.svg) 0 0/100% no-repeat;
-  /* Стрелка не активная */
-}
-
-.card .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  left: 12px;
-  bottom: 12px;
-}
-
-.card .slick-dots li {
-  list-style: none;
-  margin: 0 4px;
-}
-
-.card .slick-dots li button {
-  font-size: 0;
-  width: 12px;
-  height: 12px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 3px solid #E5E5E5;
-}
-
-.card .slick-dots .slick-active button {
-  border: 3px solid #5DAC19;
 }
 
 @media all and (-ms-high-contrast: none) {
