@@ -1,6 +1,18 @@
+.content__card:nth-child(odd)
+	margin-left: 16px
+.content__card:nth-child(even)
+	margin-right: 16px
 .card
-	.card__conteiner
+	min-width: 0
+.card__slider
+	.slick-list
+		overflow: hidden
+		max-width: 736px
+		height: 196px
+		min-width: 288px
+	.slick-track
 		display: flex
-		flex-flow: row nowrap
-	
-	
+	.card__img
+
+		img
+			max-width: 100%

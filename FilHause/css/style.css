@@ -326,14 +326,33 @@ body {
   margin-bottom: 8px;
 }
 
-.card .card__conteiner {
+.content__card:nth-child(odd) {
+  margin-left: 16px;
+}
+
+.content__card:nth-child(even) {
+  margin-right: 16px;
+}
+
+.card {
+  min-width: 0;
+}
+
+.card__slider .slick-list {
+  overflow: hidden;
+  max-width: 736px;
+  height: 196px;
+  min-width: 288px;
+}
+
+.card__slider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+}
+
+.card__slider .card__img img {
+  max-width: 100%;
 }
 
 @media all and (-ms-high-contrast: none) {

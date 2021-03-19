@@ -1,11 +1,14 @@
 @@include('jquery-1.11.0.min.js')
 @@include('slick.min.js')
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.titel__slaider').slick({
-  		dots:true
+		dots: true
 	});
 	$('.card__slider').slick({
-		dots: true
-	 });
+		dots: true,
+		infinite: true,
+		speed: 500,
+		cssEase: 'linear'
+	});
 
 });
