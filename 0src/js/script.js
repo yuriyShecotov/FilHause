@@ -2,7 +2,10 @@
 @@include('slick.min.js')
 $(document).ready(function () {
 	$('.titel__slaider').slick({
-		dots: true
+		dots: true,
+		infinite: true,
+		speed: 500,
+		cssEase: 'linear'
 	});
 	$('.card__slider').slick({
 		dots: true,
