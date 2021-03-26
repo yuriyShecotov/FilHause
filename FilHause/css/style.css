@@ -460,6 +460,7 @@ body {
   outline: none;
   width: 46px;
   height: 46px;
+  background-color: transparent;
 }
 
 .card .card__slider .slick-next {
@@ -487,7 +488,7 @@ body {
 }
 
 .card .card__slider .slick-dots li {
-  margin: 0 4px;
+  padding: 4px;
 }
 
 .card .card__slider .slick-dots li button {
