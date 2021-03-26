@@ -1,39 +1,79 @@
 .content__filter
-	margin-right: 32px
+  margin-right: 32px
+  height: 100%
 .filter
-.filter__button
-.filter__floors
-	margin-top: 32px
-.filter__floorscheckbox
-.filter__floorstaitel
-	font-size: 24px
-	font-weight: bold
-	margin-bottom: 8px
-	font-weight: normal
-.filter__square
-.filter__sqaretext
-	margin-left: 8px
-	font-size: 18px
-	font-family: Akrobat
-	color: $light_black
-	font-weight: normal
-.filter__squareinput
-	display: flex
-	align-items: flex-end
-	input[type="number"]
-		font-family: Akrobat
-		font-size: 16px
-		font-weight: normal
-		padding: 3px 10px
-		border-radius: 5px
-		border: 2px solid $light_grin
-		color: $light_black
-		max-width: 125px
-	input[type="number"]:focus
-		color: $light_black
-		border: 2px solid $light_grin_Hover
+  .filter__button
+    input
+      border-radius: 5px
+      border: 2px solid
+      padding: 3px 6px
+      font-size: 18px
+      color: $light_grin
+      +font(normal)
+  .filter__floors
+    margin-top: 32px
+  .filter__floorscheckbox
+    margin-bottom: 32px
+    p
+      padding-bottom: 5px
+    input[type="checkbox"]
+      position: absolute
+      z-index: -1
+      opacity: 0
+    input[type="checkbox"]+label
+      display: inline-flex
+      align-items: center
+      user-select: none
+      +font(normal)
+    input[type="checkbox"]+label::before
+      content: ''
+      display: inline-block
+      width: 23px
+      height: 23px
+      flex-shrink: 0
+      flex-grow: 0
+      border: 1px solid $light_black
+      border-radius: 5px
+      margin-right: 20px
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 90% 75%
+    input[type="checkbox"]:checked+label::before
+      border-color: $light_grin
+      background-color: $light_grin
+      background-image: url("../img/icons/checkmark.svg")
+    input[type="checkbox"]:not(:disabled):not(:checked)+label:hover::before
+      border-color: $light_grin_Hover
+    input[type="checkbox"]+label:hover
+      cursor: pointer
 
-.filter__squaretitle
-	font-size: 24px
-	font-weight: normal
-	margin-bottom: 8px
+  .filter__floorstaitel
+    font-size: 24px
+    font-weight: bold
+    margin-bottom: 5px
+    font-weight: normal
+  .filter__square
+  .filter__sqaretext
+
+    font-size: 18px
+    color: $light_black
+    +font(normal)
+  .filter__squareinput
+    display: flex
+    align-items: flex-end
+    input[type="number"]
+      margin-right: 8px
+      font-size: 18px
+      padding: 3px 10px
+      border-radius: 5px
+      border: 2px solid $light_grin
+      color: $light_black
+      max-width: 125px
+    input[type="number"]:focus
+      color: $light_black
+      border: 2px solid $light_grin_Hover
+
+  .filter__squaretitle
+    font-size: 24px
+    margin-bottom: 5px
+    +font(normal)

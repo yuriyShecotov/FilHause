@@ -1,11 +1,13 @@
 .content
 	margin: 0px 16px
 	.content__title
-		margin: 116px 0px 32px 0px
+		// margin: 94px 0px 32px 0px
 		h2
 			font-size: 64px
-			font-weight: 500
-			font-style: normal
+			+font(normal)
+			font-feature-settings: 'salt'
+
 	.content__project
 		display: flex
+		justify-content: flex-end
 		flex-wrap: wrap
