@@ -1,18 +1,21 @@
-.content__card:nth-child(odd)
-	margin-left: 32px
+.content__card:nth-child(even)
+	margin-right: 32px
 // .content__card:nth-child(even)
 // 	margin-right: 16px
+.content__card
+	margin-bottom: 64px
+	max-width: 36%
 .card
 	min-width: 0
-	margin-bottom: 64px
+
 	.card__slider
 		position: relative
 		margin-bottom: 12px
 		.slick-list
 			overflow: hidden
-			max-width: 376px
+			// max-width: 376px
 			height: 196px
-			min-width: 288px
+			// min-width: 288px
 			border-radius: 5px
 		.slick-track
 			display: flex

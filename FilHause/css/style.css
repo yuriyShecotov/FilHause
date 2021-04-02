@@ -144,11 +144,12 @@ body {
 }
 
 .titel__text h1 {
-  font-size: 90px;
-  text-transform: uppercase;
+  font-size: 84px;
   margin: 0;
   font-family: Akrobat;
   font-weight: normal;
+  -webkit-font-feature-settings: 'salt';
+          font-feature-settings: 'salt';
 }
 
 .titel__text p {
@@ -414,13 +415,17 @@ body {
   font-weight: normal;
 }
 
-.content__card:nth-child(odd) {
-  margin-left: 32px;
+.content__card:nth-child(even) {
+  margin-right: 32px;
+}
+
+.content__card {
+  margin-bottom: 64px;
+  max-width: 36%;
 }
 
 .card {
   min-width: 0;
-  margin-bottom: 64px;
 }
 
 .card .card__slider {
@@ -430,9 +435,7 @@ body {
 
 .card .card__slider .slick-list {
   overflow: hidden;
-  max-width: 376px;
   height: 196px;
-  min-width: 288px;
   border-radius: 5px;
 }
 
@@ -573,10 +576,125 @@ body {
   font-weight: normal;
 }
 
-.container__contactsfooter {
+.footer {
   background-color: #272b34;
   padding: 8px 16px 0 16px;
   border-radius: 5px 5px 0 0;
+}
+
+.container__productheader {
+  margin-bottom: 64px;
+}
+
+.productcontainer .productcontainer__title h1 {
+  font-size: 84px;
+  text-transform: capitalize;
+  margin: 0;
+  font-family: Akrobat;
+  font-weight: normal;
+  margin-bottom: 24px;
+  -webkit-font-feature-settings: 'salt';
+          font-feature-settings: 'salt';
+}
+
+.productcontainer .productcontainer__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.productcontainer .productcontainer__card .card__slider {
+  height: 400px;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+
+.productcontainer .productcontainer__card .card__slider .slick-list {
+  max-width: 800px;
+  min-width: 200px;
+  height: 400px;
+}
+
+.productcontainer .productcontainer__card .card__specifications {
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productcontainer .productcontainer__card .card__specifications .card__square,
+.productcontainer .productcontainer__card .card__specifications .card__block1,
+.productcontainer .productcontainer__card .card__specifications .card__block2,
+.productcontainer .productcontainer__card .card__specifications .card__block3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.productcontainer .productcontainer__card .card__specifications .card__square {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.productcontainer .productcontainer__card .card__specifications .card__square .card__squareicon {
+  margin-right: 16px;
+}
+
+.productcontainer .productcontainer__card .card__specifications .card__square .card__squareicon svg {
+  width: 64px;
+  height: 64px;
+}
+
+.productcontainer .productcontainer__card .card__specifications .card__rooms,
+.productcontainer .productcontainer__card .card__specifications .card__kitchen,
+.productcontainer .productcontainer__card .card__specifications .card__bathroom,
+.productcontainer .productcontainer__card .card__specifications .Card__sauna,
+.productcontainer .productcontainer__card .card__specifications .card__attic,
+.productcontainer .productcontainer__card .card__specifications .card__balcony {
+  width: 64px;
+  height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productcontainer .productcontainer__card .card__specifications .card__rooms p,
+.productcontainer .productcontainer__card .card__specifications .card__kitchen p,
+.productcontainer .productcontainer__card .card__specifications .card__bathroom p,
+.productcontainer .productcontainer__card .card__specifications .Card__sauna p,
+.productcontainer .productcontainer__card .card__specifications .card__attic p,
+.productcontainer .productcontainer__card .card__specifications .card__balcony p {
+  text-align: center;
+}
+
+.productcontainer .productcontainer__card .card__specifications .card__rooms svg,
+.productcontainer .productcontainer__card .card__specifications .card__kitchen svg,
+.productcontainer .productcontainer__card .card__specifications .card__bathroom svg,
+.productcontainer .productcontainer__card .card__specifications .Card__sauna svg,
+.productcontainer .productcontainer__card .card__specifications .card__attic svg,
+.productcontainer .productcontainer__card .card__specifications .card__balcony svg {
+  width: 60px;
+  height: 60px;
 }
 
 @media all and (-ms-high-contrast: none) {

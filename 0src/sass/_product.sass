@@ -1,0 +1,55 @@
+.container__productheader
+    margin-bottom: 64px
+.productcontainer
+    .productcontainer__title
+
+        h1
+            font-size: 84px
+            text-transform: capitalize
+            margin: 0
+            +font(normal)
+            margin-bottom: 24px
+            font-feature-settings: 'salt'
+    .productcontainer__title
+
+    .productcontainer__card
+        display: flex
+        flex-wrap: wrap
+        .card__slider
+            height: 400px
+            margin-right: 16px
+            margin-bottom: 0
+            .slick-list
+                max-width: 800px
+                min-width: 200px
+                height: 400px
+        .card__price
+
+        .card__specifications
+            margin-right: 16px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .card__square,.card__block1,.card__block2,.card__block3
+                display: flex
+                justify-content: space-between
+                font-size: 14px
+            .card__square
+                font-size: 24px
+                font-weight: bold
+                .card__squareicon
+                    margin-right: 16px
+                    svg
+                        width: 64px
+                        height: 64px
+            .card__rooms,.card__kitchen,.card__bathroom,.Card__sauna,.card__attic,.card__balcony
+                width: 64px
+                height: 84px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                p
+                    text-align: center
+                svg
+                    width: 60px
+                    height: 60px
