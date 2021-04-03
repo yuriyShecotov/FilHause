@@ -145,11 +145,10 @@ body {
 
 .titel__text h1 {
   font-size: 84px;
+  text-transform: uppercase;
   margin: 0;
   font-family: Akrobat;
   font-weight: normal;
-  -webkit-font-feature-settings: 'salt';
-          font-feature-settings: 'salt';
 }
 
 .titel__text p {
@@ -588,13 +587,15 @@ body {
 
 .productcontainer .productcontainer__title h1 {
   font-size: 84px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin: 0;
-  font-family: Akrobat;
   font-weight: normal;
   margin-bottom: 24px;
-  -webkit-font-feature-settings: 'salt';
-          font-feature-settings: 'salt';
+  letter-spacing: 8px;
+}
+
+.productcontainer .productcontainer__title {
+  margin-bottom: 64px;
 }
 
 .productcontainer .productcontainer__card {
@@ -603,22 +604,54 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-width: 0;
 }
 
 .productcontainer .productcontainer__card .card__slider {
-  height: 400px;
+  min-width: 0;
   margin-right: 16px;
   margin-bottom: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
 }
 
 .productcontainer .productcontainer__card .card__slider .slick-list {
-  max-width: 800px;
-  min-width: 200px;
-  height: 400px;
+  min-height: 100%;
+}
+
+.productcontainer .productcontainer__card .card__price {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 3 100%;
+          flex: 0 3 100%;
+  margin-top: 64px;
+  margin-left: 16px;
+}
+
+.productcontainer .productcontainer__card .card__price h2 {
+  font-size: 48px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.productcontainer .productcontainer__card .card__price .card__priceblok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 48px;
+}
+
+.productcontainer .productcontainer__card .card__price .card__priceblok p {
+  font-size: 24px;
+  margin-right: 94px;
 }
 
 .productcontainer .productcontainer__card .card__specifications {
-  margin-right: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 3 18%;
+          flex: 0 3 18%;
+  height: 384px;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,6 +677,13 @@ body {
   font-size: 14px;
 }
 
+.productcontainer .productcontainer__card .card__specifications .card__block1 svg,
+.productcontainer .productcontainer__card .card__specifications .card__block2 svg,
+.productcontainer .productcontainer__card .card__specifications .card__block3 svg {
+  width: 48px;
+  height: 48px;
+}
+
 .productcontainer .productcontainer__card .card__specifications .card__square {
   font-size: 24px;
   font-weight: bold;
@@ -653,7 +693,7 @@ body {
   margin-right: 16px;
 }
 
-.productcontainer .productcontainer__card .card__specifications .card__square .card__squareicon svg {
+.productcontainer .productcontainer__card .card__specifications .card__square svg {
   width: 64px;
   height: 64px;
 }
@@ -665,7 +705,6 @@ body {
 .productcontainer .productcontainer__card .card__specifications .card__attic,
 .productcontainer .productcontainer__card .card__specifications .card__balcony {
   width: 64px;
-  height: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -685,16 +724,6 @@ body {
 .productcontainer .productcontainer__card .card__specifications .card__attic p,
 .productcontainer .productcontainer__card .card__specifications .card__balcony p {
   text-align: center;
-}
-
-.productcontainer .productcontainer__card .card__specifications .card__rooms svg,
-.productcontainer .productcontainer__card .card__specifications .card__kitchen svg,
-.productcontainer .productcontainer__card .card__specifications .card__bathroom svg,
-.productcontainer .productcontainer__card .card__specifications .Card__sauna svg,
-.productcontainer .productcontainer__card .card__specifications .card__attic svg,
-.productcontainer .productcontainer__card .card__specifications .card__balcony svg {
-  width: 60px;
-  height: 60px;
 }
 
 @media all and (-ms-high-contrast: none) {

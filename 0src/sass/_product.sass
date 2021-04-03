@@ -5,28 +5,51 @@
 
         h1
             font-size: 84px
-            text-transform: capitalize
+            text-transform: uppercase
             margin: 0
-            +font(normal)
+            font-weight: normal
             margin-bottom: 24px
-            font-feature-settings: 'salt'
+            letter-spacing: 8px
+            // font-feature-settings: 'salt'
     .productcontainer__title
-
+        margin-bottom: 64px
     .productcontainer__card
         display: flex
         flex-wrap: wrap
+        min-width: 0
         .card__slider
-            height: 400px
+            // height: 400px
+            min-width: 0
             margin-right: 16px
             margin-bottom: 0
+            flex: 0 1 80%
+
             .slick-list
-                max-width: 800px
-                min-width: 200px
-                height: 400px
+                // max-width: 800px
+                // min-width: 200px
+                // height: 400px
+                min-height: 100%
         .card__price
+            flex: 0 3 100%
+            margin-top: 64px
+            margin-left: 16px
+            h2
+                font-size: 48px
+                font-weight: normal
+                text-transform: uppercase
+            .card__priceblok
+                display: flex
+                padding-left: 48px
+                p
+                    font-size: 24px
+                    margin-right: 94px
+                // justify-content: flex-end
 
         .card__specifications
-            margin-right: 16px
+            flex: 0 3 18%
+            height: 384px
+            // margin-right: 16px
+            min-height: 100%
             display: flex
             flex-direction: column
             justify-content: space-between
@@ -34,22 +57,23 @@
                 display: flex
                 justify-content: space-between
                 font-size: 14px
+            .card__block1,.card__block2,.card__block3
+                svg
+                    width: 48px
+                    height: 48px
             .card__square
                 font-size: 24px
                 font-weight: bold
                 .card__squareicon
                     margin-right: 16px
-                    svg
-                        width: 64px
-                        height: 64px
+                svg
+                    width: 64px
+                    height: 64px
             .card__rooms,.card__kitchen,.card__bathroom,.Card__sauna,.card__attic,.card__balcony
                 width: 64px
-                height: 84px
+                // height: 84px
                 display: flex
                 flex-direction: column
                 justify-content: center
                 p
                     text-align: center
-                svg
-                    width: 60px
-                    height: 60px
