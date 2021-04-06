@@ -1,97 +1,101 @@
-.content__card:nth-child(even)
-	margin-right: 32px
-// .content__card:nth-child(even)
-// 	margin-right: 16px
+
 .content__card
 	margin-bottom: 64px
-	max-width: 36%
-.card
+	display: flex
+	flex-wrap: wrap
 	min-width: 0
+	justify-content: space-between
+.content__cardsection
+	max-width: 375px
+	min-width: 288px
+	margin-bottom: 32px
+.content__cardsection:nth-child(odd)
+	margin-right: 32px
+.card__slider
+	min-width: 0
+	position: relative
+	margin-bottom: 12px
+	.slick-list
+		overflow: hidden
+		// max-width: 376px
+		height: 196px
+		// min-width: 288px
+		border-radius: 5px
+	.slick-track
+		display: flex
+	.card__img
+		img
+			max-width: 100%
+			object-fit: cover
+	.slick-arrow
+		position: absolute
+		top: 8px
+		right: 8px
+		z-index: 10
+		font-size: 0
+		padding: 0
+		border: none
+		background-color: transparent
+		outline: none
+		width: 46px
+		height: 46px
+		background-color: transparent
+	.slick-next
+		background: url(../img/icons/button_R.svg) 0 0 / 100% no-repeat
+	.slick-next:hover
+		background: url(../img/icons/button_R_Hover.svg) 0 0 / 100% no-repeat
 
-	.card__slider
-		position: relative
+	.slick-dots
+		display: flex
+		list-style: none
+		position: absolute
+		justify-content: center
+		bottom: 8px
+		right: 50%
+		transform: translateX(50%)
+		li
+			padding: 4px
+			//background-color: #fff
+			button
+				font-size: 0
+				width: 12px
+				height: 12px
+				background-color: transparent
+				border-radius: 50%
+				border: 3px solid $gray
+		.slick-active
+			button
+				border: 3px solid $light_grin
+.card__data
+	.card__params
+		display: flex
+		justify-content: space-between
 		margin-bottom: 12px
-		.slick-list
-			overflow: hidden
-			// max-width: 376px
-			height: 196px
-			// min-width: 288px
-			border-radius: 5px
-		.slick-track
+		a
+			font-size: 24px
+			color: $light_black
+			text-transform: uppercase
+		a:hover
+			color: $light_grin_Hover
+		.card__square
 			display: flex
-		.card__img
-			img
-				max-width: 100%
-				object-fit: cover
-		.slick-arrow
-			position: absolute
-			top: 8px
-			right: 8px
-			z-index: 10
-			font-size: 0
-			padding: 0
-			border: none
-			background-color: transparent
-			outline: none
-			width: 46px
-			height: 46px
-			background-color: transparent
-		.slick-next
-			background: url(../img/icons/button_R.svg) 0 0 / 100% no-repeat
-		.slick-next:hover
-			background: url(../img/icons/button_R_Hover.svg) 0 0 / 100% no-repeat
-
-		.slick-dots
-			display: flex
-			list-style: none
-			position: absolute
-			justify-content: center
-			bottom: 8px
-			right: 50%
-			transform: translateX(50%)
-			li
-				padding: 4px
-				//background-color: #fff
-				button
-					font-size: 0
-					width: 12px
-					height: 12px
-					background-color: transparent
-					border-radius: 50%
-					border: 3px solid $gray
-			.slick-active
-				button
-					border: 3px solid $light_grin
-	.card__data
-		.card__params
-			display: flex
-			justify-content: space-between
-			margin-bottom: 12px
-			a
-				font-size: 24px
+			p
+				font-size: 16px
 				color: $light_black
-				text-transform: uppercase
-			a:hover
-				color: $light_grin_Hover
-			.card__square
+				+font(bold)
+			img
+				margin-right: 12px
+	.card__praise
+		display: flex
+		justify-content: space-between
+		.Card__sum
+			p
 				display: flex
-				p
-					font-size: 16px
-					color: $light_black
-					+font(bold)
-				img
+				justify-content: space-between
+				span
 					margin-right: 12px
-		.card__praise
-			display: flex
-			justify-content: space-between
-			.Card__sum
-				p
-					display: flex
-					justify-content: space-between
-					span
-						margin-right: 12px
-					span:last-child
-						margin-right: 0
-			h4
-				font-size: 24px
-				+font(normal)
+				span:last-child
+					margin-right: 0
+		h4
+			font-size: 24px
+			+font(normal)

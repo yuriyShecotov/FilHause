@@ -267,7 +267,12 @@ body {
 }
 
 .content {
-  margin: 0px 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.content .content__title {
+  margin-bottom: 32px;
 }
 
 .content .content__title h2 {
@@ -282,11 +287,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .content__filter {
@@ -414,43 +414,54 @@ body {
   font-weight: normal;
 }
 
-.content__card:nth-child(even) {
+.content__card {
+  margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content__cardsection {
+  max-width: 375px;
+  min-width: 288px;
+  margin-bottom: 32px;
+}
+
+.content__cardsection:nth-child(odd) {
   margin-right: 32px;
 }
 
-.content__card {
-  margin-bottom: 64px;
-  max-width: 36%;
-}
-
-.card {
+.card__slider {
   min-width: 0;
-}
-
-.card .card__slider {
   position: relative;
   margin-bottom: 12px;
 }
 
-.card .card__slider .slick-list {
+.card__slider .slick-list {
   overflow: hidden;
   height: 196px;
   border-radius: 5px;
 }
 
-.card .card__slider .slick-track {
+.card__slider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.card .card__slider .card__img img {
+.card__slider .card__img img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.card .card__slider .slick-arrow {
+.card__slider .slick-arrow {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -465,15 +476,15 @@ body {
   background-color: transparent;
 }
 
-.card .card__slider .slick-next {
+.card__slider .slick-next {
   background: url(../img/icons/button_R.svg) 0 0/100% no-repeat;
 }
 
-.card .card__slider .slick-next:hover {
+.card__slider .slick-next:hover {
   background: url(../img/icons/button_R_Hover.svg) 0 0/100% no-repeat;
 }
 
-.card .card__slider .slick-dots {
+.card__slider .slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,11 +500,11 @@ body {
           transform: translateX(50%);
 }
 
-.card .card__slider .slick-dots li {
+.card__slider .slick-dots li {
   padding: 4px;
 }
 
-.card .card__slider .slick-dots li button {
+.card__slider .slick-dots li button {
   font-size: 0;
   width: 12px;
   height: 12px;
@@ -502,11 +513,11 @@ body {
   border: 3px solid #E5E5E5;
 }
 
-.card .card__slider .slick-dots .slick-active button {
+.card__slider .slick-dots .slick-active button {
   border: 3px solid #5DAC19;
 }
 
-.card .card__data .card__params {
+.card__data .card__params {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,34 +527,34 @@ body {
   margin-bottom: 12px;
 }
 
-.card .card__data .card__params a {
+.card__data .card__params a {
   font-size: 24px;
   color: #272b34;
   text-transform: uppercase;
 }
 
-.card .card__data .card__params a:hover {
+.card__data .card__params a:hover {
   color: #5eac19c7;
 }
 
-.card .card__data .card__params .card__square {
+.card__data .card__params .card__square {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.card .card__data .card__params .card__square p {
+.card__data .card__params .card__square p {
   font-size: 16px;
   color: #272b34;
   font-family: Akrobat;
   font-weight: bold;
 }
 
-.card .card__data .card__params .card__square img {
+.card__data .card__params .card__square img {
   margin-right: 12px;
 }
 
-.card .card__data .card__praise {
+.card__data .card__praise {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,7 +563,7 @@ body {
           justify-content: space-between;
 }
 
-.card .card__data .card__praise .Card__sum p {
+.card__data .card__praise .Card__sum p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,15 +572,15 @@ body {
           justify-content: space-between;
 }
 
-.card .card__data .card__praise .Card__sum p span {
+.card__data .card__praise .Card__sum p span {
   margin-right: 12px;
 }
 
-.card .card__data .card__praise .Card__sum p span:last-child {
+.card__data .card__praise .Card__sum p span:last-child {
   margin-right: 0;
 }
 
-.card .card__data .card__praise h4 {
+.card__data .card__praise h4 {
   font-size: 24px;
   font-family: Akrobat;
   font-weight: normal;
