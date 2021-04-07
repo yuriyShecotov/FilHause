@@ -2,7 +2,7 @@
     margin-bottom: 64px
 .productcontainer
     .productcontainer__title
-
+        margin: 0px 16px 64px 16px
         h1
             font-size: 84px
             text-transform: uppercase
@@ -10,9 +10,7 @@
             font-weight: normal
             margin-bottom: 24px
             letter-spacing: 8px
-            // font-feature-settings: 'salt'
-    .productcontainer__title
-        margin-bottom: 64px
+            // font-feature-settings: 'salt'  
     .productcontainer__card
         display: flex
         flex-wrap: wrap
@@ -32,7 +30,7 @@
         .card__price
             flex: 0 3 100%
             margin-top: 64px
-            margin-left: 16px
+            // margin-left: 16px
             h2
                 font-size: 48px
                 font-weight: normal
@@ -47,7 +45,7 @@
 
         .card__specifications
             flex: 0 3 18%
-            height: 384px
+            height: 500px
             // margin-right: 16px
             min-height: 100%
             display: flex
@@ -77,3 +75,37 @@
                 justify-content: center
                 p
                     text-align: center
+.productcontainer__view
+    margin: 0px 16px 0px 16px
+    .productcontainer__slider
+        min-width: 0
+        .slick-list
+            overflow: hidden
+            .slick-track
+                display: flex
+                align-items: flex-start
+                .productcontainer__floorplan
+                    display: flex
+                    justify-content: space-between
+                    min-width: 0
+                    .productcontainer__floorplanimg
+                        background-color: #fff
+                        width: 49%
+                        // height: 445px
+                        overflow: hidden
+                        img
+                            width: 100%
+                            object-fit: cover
+                .productcontainer__facade
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    min-width: 0
+                    .productcontainer__facadeimg
+                        width: 49%
+                        // height: 445px
+                        overflow: hidden
+                        margin-bottom: 16px
+                        img
+                            width: 100%
+                            object-fit: cover

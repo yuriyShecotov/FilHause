@@ -18,5 +18,10 @@ $(document).ready(function () {
 		speed: 500,
 		cssEase: 'linear'
 	});
-
+	$('.productcontainer__slider').slick({
+		adaptiveHeight: true,
+		infinite: false,
+		prevArrow: '#prev',
+		nextArrow: '#next'
+	});
 });
