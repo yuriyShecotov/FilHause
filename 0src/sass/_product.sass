@@ -1,6 +1,7 @@
 .container__productheader
     margin-bottom: 64px
 .productcontainer
+    margin-bottom: 64px
     .productcontainer__title
         margin: 0px 16px 64px 16px
         h1
@@ -29,7 +30,7 @@
                 min-height: 100%
         .card__price
             flex: 0 3 100%
-            margin-top: 64px
+            margin-top: 32px
             // margin-left: 16px
             h2
                 font-size: 48px
@@ -77,8 +78,27 @@
                     text-align: center
 .productcontainer__view
     margin: 0px 16px 0px 16px
+
+    button
+        font-size: 48px
+        font-family: Akrobat
+        background-color: transparent
+        border: 0
+        padding: 0
+        color: $light_black
+
+        font-weight: 400
+        cursor: pointer
+        margin-bottom: 32px
+        margin-right: 24px
+    .slick-disabled
+        color: $light_grin
+
+    .productcontainer__next
+        font-size: 48px
     .productcontainer__slider
         min-width: 0
+        margin-bottom: 32px
         .slick-list
             overflow: hidden
             .slick-track
@@ -109,3 +129,48 @@
                         img
                             width: 100%
                             object-fit: cover
+    .productcontainer__edit
+        font-size: 24px
+        color: $light_grin
+        border: 2px solid $light_grin
+        border-radius: 5px
+        padding: 9px 12px
+        margin-left: 50%
+        transform: translateX(-50%)
+    .productcontainer__edit:hover
+        color: $light_grin_Hover
+        border-color: $light_grin_Hover
+
+.equipment
+    margin: 0 16px
+    h3
+        font-size: 64px
+        font-weight: 300
+        margin-bottom: 12px
+        color: $light_black
+    .equipment__slider
+        .equipment__sliderbutton
+            display: flex
+            justify-content: space-between
+            button
+                font-size: 48px
+                font-family: Akrobat
+                background-color: transparent
+                border: 0
+                padding: 0
+                color: $light_black
+            button:nth-child(2)
+                margin-right: 324px
+        .equipment__blockslider
+            display: flex
+            justify-content: space-between
+            dl
+                dt
+                    font-family: Akrobat
+                    font-size: 36px
+                    margin-bottom: 8px
+                dd
+                    font-family: Akrobat
+                    font-size: 24px
+                    margin-left: 42px
+                    margin-bottom: 8px

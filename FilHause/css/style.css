@@ -279,8 +279,6 @@ body {
   font-size: 64px;
   font-family: Akrobat;
   font-weight: normal;
-  -webkit-font-feature-settings: 'salt';
-          font-feature-settings: 'salt';
 }
 
 .content .content__project {
@@ -310,6 +308,7 @@ body {
 
 .filter .filter__floorscheckbox {
   margin-bottom: 32px;
+  margin-left: 42px;
 }
 
 .filter .filter__floorscheckbox p {
@@ -372,7 +371,7 @@ body {
 .filter .filter__floorstaitel {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   font-weight: normal;
 }
 
@@ -384,6 +383,7 @@ body {
 }
 
 .filter .filter__squareinput {
+  margin-left: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,13 +409,13 @@ body {
 
 .filter .filter__squaretitle {
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   font-family: Akrobat;
   font-weight: normal;
 }
 
 .content__card {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +428,7 @@ body {
 }
 
 .content__cardsection {
-  max-width: 375px;
+  max-width: 48%;
   min-width: 288px;
   margin-bottom: 32px;
 }
@@ -445,7 +445,7 @@ body {
 
 .card__slider .slick-list {
   overflow: hidden;
-  height: 196px;
+  max-height: 250px;
   border-radius: 5px;
 }
 
@@ -596,6 +596,10 @@ body {
   margin-bottom: 64px;
 }
 
+.productcontainer {
+  margin-bottom: 64px;
+}
+
 .productcontainer .productcontainer__title {
   margin: 0px 16px 64px 16px;
 }
@@ -635,7 +639,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 3 100%;
           flex: 0 3 100%;
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .productcontainer .productcontainer__card .card__price h2 {
@@ -740,8 +744,30 @@ body {
   margin: 0px 16px 0px 16px;
 }
 
+.productcontainer__view button {
+  font-size: 48px;
+  font-family: Akrobat;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: #272b34;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 32px;
+  margin-right: 24px;
+}
+
+.productcontainer__view .slick-disabled {
+  color: #5DAC19;
+}
+
+.productcontainer__view .productcontainer__next {
+  font-size: 48px;
+}
+
 .productcontainer__view .productcontainer__slider {
   min-width: 0;
+  margin-bottom: 32px;
 }
 
 .productcontainer__view .productcontainer__slider .slick-list {
@@ -801,6 +827,78 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.productcontainer__view .productcontainer__edit {
+  font-size: 24px;
+  color: #5DAC19;
+  border: 2px solid #5DAC19;
+  border-radius: 5px;
+  padding: 9px 12px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.productcontainer__view .productcontainer__edit:hover {
+  color: #5eac19c7;
+  border-color: #5eac19c7;
+}
+
+.equipment {
+  margin: 0 16px;
+}
+
+.equipment h3 {
+  font-size: 64px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  color: #272b34;
+}
+
+.equipment .equipment__slider .equipment__sliderbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.equipment .equipment__slider .equipment__sliderbutton button {
+  font-size: 48px;
+  font-family: Akrobat;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: #272b34;
+}
+
+.equipment .equipment__slider .equipment__sliderbutton button:nth-child(2) {
+  margin-right: 324px;
+}
+
+.equipment .equipment__slider .equipment__blockslider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.equipment .equipment__slider .equipment__blockslider dl dt {
+  font-family: Akrobat;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.equipment .equipment__slider .equipment__blockslider dl dd {
+  font-family: Akrobat;
+  font-size: 24px;
+  margin-left: 42px;
+  margin-bottom: 8px;
 }
 
 @media all and (-ms-high-contrast: none) {
