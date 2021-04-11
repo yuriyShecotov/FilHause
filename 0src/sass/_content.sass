@@ -4,11 +4,21 @@
 	margin-right: 16px
 	.content__title
 		margin-bottom: 32px
+		display: flex
+		justify-content: space-between
+		align-items: center
 		h2
 			font-size: 64px
 			+font(normal)
 			// font-feature-settings: 'salt'
-
+		.content__button
+			input
+				border-radius: 5px
+				border: 2px solid
+				padding: 3px 26px
+				font-size: 18px
+				color: $light_grin
+				+font(normal)
 	.content__project
 		display: flex
 		// justify-content: flex-end

@@ -82,37 +82,41 @@
 <div class="content">
 	<div class="content__title">
 		<h2>Выбрать проект</h2>
+		<div class="content__button"><input type="button" value="Создать свой проект"></div>
 	</div>
 	<div class="content__project">
 		<!-- Filter -->
 		<asige class="content__filter filter">
-	<div class="filter__square">
-		<h3 class="filter__squaretitle">Площадь</h3>
-		<div class="filter__squareinput">
-			<input type="number">
-			<div class="filter__sqaretext">
-				<p>М<sup>2</sup></p>
+	<div class="filter__block">
+		<div class="filter__square">
+			<h3 class="filter__squaretitle">Площадь</h3>
+			<div class="filter__squareinput">
+				<input type="number">
+				<div class="filter__sqaretext">
+					<p>М<sup>2</sup></p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="filter__floors">
-		<h3 class="filter__floorstaitel">Этажность </h3>
-		<div class="filter__floorscheckbox">
-			<p>
-				<input type="checkbox" name="a" value="1" id="singlestorey" />
-				<label for="singlestorey">
-					Oдноэтажный
-				</label>
-			</p>
-			<p>
-				<input type="checkbox" name="a" value="2" id="twostoried" />
-				<label for="twostoried">
-					Двухэтажный
-				</label>
-			</p>
+		<div class="filter__floors">
+			<h3 class="filter__floorstaitel">Этажность </h3>
+			<div class="filter__floorscheckbox">
+				<p>
+					<input type="checkbox" name="a" value="1" id="singlestorey" />
+					<label for="singlestorey">
+						Oдноэтажный
+					</label>
+				</p>
+				<p>
+					<input type="checkbox" name="a" value="2" id="twostoried" />
+					<label for="twostoried">
+						Двухэтажный
+					</label>
+				</p>
+			</div>
+
 		</div>
-		<div class="filter__button"><input type="button" value="Создать свой проект"></div>
 	</div>
+	<div class="filter__button"><input type="button" value="Подобрать"></div>
 </asige>
 		<!-- Card -->
 		<section class="content__card card">
