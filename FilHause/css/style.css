@@ -291,13 +291,17 @@ body {
 }
 
 .content .content__title .content__button input {
+  color: #272b34;
   border-radius: 5px;
   border: 2px solid;
   padding: 3px 26px;
   font-size: 18px;
-  color: #5DAC19;
   font-family: Akrobat;
   font-weight: normal;
+}
+
+.content .content__title .content__button input:hover {
+  border-color: #5eac19c7;
 }
 
 .content .content__project {
@@ -324,12 +328,16 @@ body {
   -ms-flex-item-align: center;
       align-self: center;
   border-radius: 5px;
-  border: 2px solid #5DAC19;
+  border: 2px solid #272b34;
   padding: 3px 62px;
   font-size: 18px;
   color: #272b34;
   font-family: Akrobat;
   font-weight: normal;
+}
+
+.filter .filter__button input:hover {
+  border-color: #5eac19c7;
 }
 
 .filter .filter__floors {
@@ -339,10 +347,6 @@ body {
 .filter .filter__floorscheckbox {
   margin-bottom: 32px;
   margin-left: 42px;
-}
-
-.filter .filter__floorscheckbox p {
-  padding-bottom: 5px;
 }
 
 .filter .filter__floorscheckbox input[type="checkbox"] {
@@ -376,7 +380,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 1px solid #272b34;
+  border: 2px solid #272b34;
   border-radius: 5px;
   margin-right: 20px;
   background-repeat: no-repeat;
@@ -385,12 +389,12 @@ body {
 }
 
 .filter .filter__floorscheckbox input[type="checkbox"]:checked + label::before {
-  border-color: #5DAC19;
+  border-color: #272b34;
   background-color: #5DAC19;
   background-image: url("../img/icons/checkmark.svg");
 }
 
-.filter .filter__floorscheckbox input[type="checkbox"]:not(:disabled):not(:checked) + label:hover::before {
+.filter .filter__floorscheckbox input[type="checkbox"] + label:hover::before {
   border-color: #5eac19c7;
 }
 
@@ -427,13 +431,12 @@ body {
   font-size: 18px;
   padding: 3px 10px;
   border-radius: 5px;
-  border: 2px solid #5DAC19;
+  border: 2px solid #272b34;
   color: #272b34;
   max-width: 125px;
 }
 
-.filter .filter__squareinput input[type="number"]:focus {
-  color: #272b34;
+.filter .filter__squareinput input[type="number"]:hover {
   border: 2px solid #5eac19c7;
 }
 
@@ -458,8 +461,7 @@ body {
 }
 
 .content__cardsection {
-  max-width: 48%;
-  min-width: 288px;
+  max-width: 47.5%;
   margin-bottom: 32px;
 }
 
@@ -931,6 +933,10 @@ body {
 }
 
 @media screen and (max-width: 1084px) {
+  .content .content__title h2 {
+    margin-right: 150px;
+  }
+
   .content .content__project {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -940,6 +946,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -948,21 +957,16 @@ body {
     margin-bottom: 64px;
   }
 
-  .content .content__project .content__filter .filter__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .content .content__project .content__filter .filter__square {
+    margin-right: 64px;
   }
 
-  .content .content__project .content__filter .filter__block .filter__square {
-    margin-right: 32px;
-  }
-
-  .content .content__project .content__filter .filter__block .filter__square .filter__squareinput {
+  .content .content__project .content__filter .filter__square .filter__squareinput {
     margin-left: 0;
   }
 
-  .content .content__project .content__filter .filter__block .filter__floors {
+  .content .content__project .content__filter .filter__floors {
+    margin-right: 32px;
     margin-top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -973,11 +977,11 @@ body {
             flex-direction: column;
   }
 
-  .content .content__project .content__filter .filter__block .filter__floors .filter__floorstaitel {
+  .content .content__project .content__filter .filter__floors .filter__floorstaitel {
     margin-bottom: 14px;
   }
 
-  .content .content__project .content__filter .filter__block .filter__floors .filter__floorscheckbox {
+  .content .content__project .content__filter .filter__floors .filter__floorscheckbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -985,7 +989,7 @@ body {
     margin-left: 0;
   }
 
-  .content .content__project .content__filter .filter__block .filter__floors .filter__floorscheckbox p {
+  .content .content__project .content__filter .filter__floors .filter__floorscheckbox p {
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -993,11 +997,27 @@ body {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+
+  .content .content__project .content__filter .filter__floors .filter__floorscheckbox p label:before {
+    margin-right: 10px;
+  }
+
+  .content .content__project .content__filter .filter__floors .filter__floorscheckbox p:nth-child(odd) {
     margin-right: 24px;
+  }
+
+  .content .content__project .content__filter .filter__button input {
+    padding-right: 34px;
+    padding-left: 34px;
   }
 }
 
 @media screen and (max-width: 832px) {
+  .container .container__titel .titel__text h1 {
+    font-size: 64px;
+  }
+
   .content .content__card .content__cardsection {
     max-width: 100%;
     margin-right: 0;
@@ -1006,15 +1026,102 @@ body {
   .content .content__card .content__cardsection .slick-list {
     max-height: 350px;
   }
+
+  .content .content__project .content__filter .filter__block .filter__floors .filter__floorstaitel {
+    font-size: 0;
+  }
+
+  .content .content__project .content__filter .filter__block .filter__floors .filter__floorscheckbox {
+    display: block;
+  }
 }
 
-@media screen and (max-width: 720px) {
-  .container .content .content__project .filter__block .filter__floors .filter__floorscheckbox {
+@media screen and (max-width: 768px) {
+  .container .content .content__title h2 {
+    margin-right: 32px;
+  }
+
+  .container .content .content__project .content__filter .filter__floors .filter__floorstaitel {
+    font-size: 0;
+  }
+
+  .container .content .content__project .content__filter .filter__floors .filter__floorscheckbox {
     display: block;
   }
 
-  .container .content .content__project .filter__block .filter__floors .filter__floorscheckbox p {
+  .container .content .content__project .content__filter .filter__floors .filter__floorscheckbox p:nth-child(1) {
     margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .container .container__contactsheader .contacts__link .contacts__phone a span {
+    font-size: 0;
+  }
+
+  .container .container__titel .titel__text h1 {
+    font-size: 36px;
+  }
+
+  .container .container__titel .titel__text p {
+    font-size: 24px;
+  }
+
+  .container .container__titel .titel__slaider a {
+    font-size: 24px;
+  }
+
+  .container .content .content__title h2 {
+    font-size: 24px;
+  }
+
+  .container .content .content__title .content__button input {
+    font-size: 18px;
+  }
+
+  .container .content .content__title .content__button .filter__sqaretext p {
+    font-size: 14px;
+  }
+
+  .container .content .content__project .content__filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .container .content .content__project .content__filter .filter__square {
+    margin-right: 32px;
+  }
+
+  .container .content .content__project .content__filter .filter__square h3 {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .container .content .content__project .content__filter .filter__square .filter__squareinput input {
+    width: 110px;
+  }
+
+  .container .content .content__project .content__filter .filter__floors {
+    margin-right: 32px;
+  }
+
+  .container .content .content__project .content__filter .filter__floors .filter__floorscheckbox p label {
+    font-size: 14px;
+  }
+
+  .container .content .content__project .content__filter .filter__button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .container .container__titel .titel__text h1 {
+    font-size: 0px;
+  }
+
+  .container .content .content__project .content__filter .filter__square {
+    margin-right: 0px;
   }
 }
 

@@ -8,18 +8,20 @@
     input
       align-self: center
       border-radius: 5px
-      border: 2px solid $light_grin
+      border: 2px solid $light_black
       padding: 3px 62px
       font-size: 18px
       color: $light_black
       +font(normal)
+    input:hover
+      border-color: $light_grin_Hover
   .filter__floors
     margin-top: 32px
   .filter__floorscheckbox
     margin-bottom: 32px
     margin-left: 42px
     p
-      padding-bottom: 5px
+      // padding-bottom: 5px
     input[type="checkbox"]
       position: absolute
       z-index: -1
@@ -36,21 +38,22 @@
       height: 23px
       flex-shrink: 0
       flex-grow: 0
-      border: 1px solid $light_black
+      border: 2px solid $light_black
       border-radius: 5px
       margin-right: 20px
       background-repeat: no-repeat
       background-position: center center
       background-size: 90% 75%
     input[type="checkbox"]:checked+label::before
-      border-color: $light_grin
+      border-color: $light_black
       background-color: $light_grin
       background-image: url("../img/icons/checkmark.svg")
-    input[type="checkbox"]:not(:disabled):not(:checked)+label:hover::before
+    input[type="checkbox"]+label:hover::before
       border-color: $light_grin_Hover
+    // input[type="checkbox"]:not(:disabled):not(:checked)+label:hover::before
+    //   border-color: $light_black
     input[type="checkbox"]+label:hover
       cursor: pointer
-
   .filter__floorstaitel
     font-size: 24px
     font-weight: bold
@@ -71,11 +74,10 @@
       font-size: 18px
       padding: 3px 10px
       border-radius: 5px
-      border: 2px solid $light_grin
+      border: 2px solid $light_black
       color: $light_black
       max-width: 125px
-    input[type="number"]:focus
-      color: $light_black
+    input[type="number"]:hover
       border: 2px solid $light_grin_Hover
 
   .filter__squaretitle
