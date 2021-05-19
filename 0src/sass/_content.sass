@@ -8,16 +8,16 @@
 		justify-content: space-between
 		align-items: center
 		h2
-			font-size: 64px
+			@include aFont(64, 24)
 			+font(normal)
-			// font-feature-settings: 'salt'
+			font-feature-settings: 'salt'
 		.content__button
 			input
 				color: $light_black
 				border-radius: 5px
 				border: 2px solid
 				padding: 3px 26px
-				font-size: 18px
+				@include aFont(22, 12)
 				+font(normal)
 			input:hover
 				border-color: $light_grin_Hover

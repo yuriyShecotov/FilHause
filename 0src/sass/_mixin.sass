@@ -1,0 +1,11 @@
+  
+//Adaptiv fonts    
+@mixin aFont($pcSize,$mobSize)
+    $addSize: $pcSize - $mobSize
+    $addModSize: $addSize + $addSize * 0.7
+    @media ( max-width: 768px )
+        font-size: calc(#{$mobSize + px} + #{$addModSize} * ((100vw - 320px) / #{$contWidth}))
+    @media ( min-width: 768px )
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw  / #{$contWidth}))
+        
+    

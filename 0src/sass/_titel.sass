@@ -1,88 +1,88 @@
 .container__titel
 	margin-bottom: 94px
-.titel__text
-	display: flex
-	flex-flow: column wrap
-	padding: 0 16px 32px 16px
-	h1
-		font-size: 84px
-		text-transform: uppercase
-		margin: 0
-		+font(normal)
-		// font-feature-settings: 'salt'
-		// letter-spacing: 5px
-	p
-		font-size: 36px
-		font-feature-settings: 'salt'
-		span
-			font-weight: bold
-/*Slaider*/
-.titel__slaider
-	position: relative
-	.slick-list
-		overflow: hidden
-		border-radius: 5px
-	.slick-track
+	.titel__text
 		display: flex
-	.slaider__img
-		position: relative
-		img
-			max-width: 100%
-		a
-			font-size: 36px
+		flex-flow: column wrap
+		padding: 0 16px 32px 16px
+		h1
+			@include aFont(96, 36)
 			text-transform: uppercase
-			padding: 4px 8px
+			margin: 0
+			+font(normal)
+			// font-feature-settings: 'salt'
+			// letter-spacing: 5px
+		p
+			@include aFont(42, 24)
+			font-feature-settings: 'salt'
+			span
+				font-weight: bold
+	/*Slaider*/
+	.titel__slaider
+		position: relative
+		.slick-list
+			overflow: hidden
 			border-radius: 5px
-			backdrop-filter: blur(2px)
+		.slick-track
+			display: flex
+		.slaider__img
+			position: relative
+			img
+				max-width: 100%
+			a
+				font-size: 36px
+				text-transform: uppercase
+				padding: 4px 8px
+				border-radius: 5px
+				backdrop-filter: blur(2px)
+				position: absolute
+				bottom: 16px
+				left: 16px
+				text-decoration: none
+				color: $gray
+			a:hover
+				color: $light_grin_Hover
+		/* Стрелка */
+		.slick-arrow
 			position: absolute
-			bottom: 16px
-			left: 16px
-			text-decoration: none
-			color: $gray
-		a:hover
-			color: $light_grin_Hover
-	/* Стрелка */
-	.slick-arrow
-		position: absolute
-		top: 16px
-		z-index: 10
-		width: 62px
-		height: 62px
-		font-size: 0
-		padding: 0
-		border: none
-		background-color: transparent
-		outline: none
+			top: 16px
+			z-index: 10
+			width: 62px
+			height: 62px
+			font-size: 0
+			padding: 0
+			border: none
+			background-color: transparent
+			outline: none
 
-	.slick-prev
-		right: 106px
-		background: url(../img/icons/button_L.svg) 0 0 / 100% no-repeat
-	.slick-prev:hover
-		background: url(../img/icons/button_L_Hover.svg) 0 0 / 100% no-repeat
-	/* Стрелка вправо */
-	.slick-next
-		right: 16px
-		background: url(../img/icons/button_R.svg) 0 0 / 100% no-repeat
-	.slick-next:hover
-		background: url(../img/icons/button_R_Hover.svg) 0 0 / 100% no-repeat
-		/* Стрелка не активная */
-	.slick-arrow.slick-disabled
-	/* Элемент точки */
-	.slick-dots
-		display: flex
-		position: absolute
-		right: 26px
-		bottom: 31px
-		li
-			list-style: none
-			margin: 0 4px
-			button
-				font-size: 0
-				width: 14px
-				height: 14px
-				background-color: transparent
-				border-radius: 50%
-				border: 3px solid $gray
-		.slick-active
-			button
-				border: 3px solid $light_grin
+		.slick-prev
+			right: 106px
+			background: url(../img/icons/button_L.svg) 0 0 / 100% no-repeat
+		.slick-prev:hover
+			background: url(../img/icons/button_L_Hover.svg) 0 0 / 100% no-repeat
+		/* Стрелка вправо */
+		.slick-next
+			right: 16px
+			background: url(../img/icons/button_R.svg) 0 0 / 100% no-repeat
+		.slick-next:hover
+			background: url(../img/icons/button_R_Hover.svg) 0 0 / 100% no-repeat
+			/* Стрелка не активная */
+		.slick-arrow.slick-disabled
+		/* Элемент точки */
+		.slick-dots
+			display: flex
+			position: absolute
+			right: 26px
+			bottom: 31px
+			li
+				list-style: none
+				margin: 0 4px
+				button
+					font-size: 0
+					width: 14px
+					height: 14px
+					background-color: transparent
+					border-radius: 50%
+					border: 3px solid $gray
+			.slick-active
+				button
+					border: 3px solid $light_grin

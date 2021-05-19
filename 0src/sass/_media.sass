@@ -1,4 +1,4 @@
-@media screen and ( max-width: 1084px )
+@media ( max-width: 1084px )
    .content
       .content__title
          // justify-content: flex-start
@@ -44,8 +44,7 @@
                input
                   padding-right: 34px
                   padding-left: 34px
-
-@media screen and ( max-width: 832px )
+@media ( max-width: 832px )
    .container
       .container__titel
          .titel__text
@@ -69,13 +68,18 @@
                      font-size: 0
                   .filter__floorscheckbox
                      display: block
-
-@media screen and ( max-width: 768px )
+@media ( max-width: 768px )
    .container
-      .content
-         .content__title
-            h2
-               margin-right: 32px
+      .container__contactsheader
+         .contacts__link
+            .contacts__phone
+               a
+                  span
+                     font-size: 0
+      .container__titel
+         .titel__slaider
+            display: none
+      .content     
          .content__project
             .content__filter
                .filter__floors
@@ -85,7 +89,7 @@
                      display: block
                      p:nth-child(1)
                         margin-bottom: 12px
-@media screen and ( max-width: 610px )
+@media ( max-width: 610px )
    .container
       .container__contactsheader
          .contacts__link
@@ -94,87 +98,23 @@
                   span
                      font-size: 0
       .container__titel
-         .titel__text
-            h1
-               font-size: 36px
-            p
-               font-size: 24px
          .titel__slaider
-            a
-               font-size: 24px
+            display: none
       .content
          .content__title
             h2
-               font-size: 24px
-            .content__button
-               input
-                  font-size: 18px
-               .filter__sqaretext
-                  p
-                     font-size: 14px
+                font-size: calc( 24px + ((36 - 24)+((36 - 24)*0.7)) * ((100vw - 320px) / 1152))
          .content__project
             .content__filter
                flex-wrap: wrap
                .filter__square
                   margin-right: 32px
-
                   h3
-                     font-size: 14px
                      margin-bottom: 18px
                   .filter__squareinput
                      input
                         width: 110px
                .filter__floors
                   margin-right: 32px
-                  .filter__floorstaitel
-
-                  .filter__floorscheckbox
-                     p
-                        label
-                           font-size: 14px
                .filter__button
                   align-self: flex-end
-@media screen and ( max-width: 533px )
-   .container
-      .container__contactsheader
-         .contacts__link
-            .contacts__phone
-               a
-                  span
-      .container__titel
-         .titel__text
-            h1
-               font-size: 0px
-
-         .titel__slaider
-            a
-
-      .content
-         .content__title
-            h2
-
-            .content__button
-               input
-
-               .filter__sqaretext
-                  p
-
-         .content__project
-            .content__filter
-
-               .filter__square
-                  margin-right: 0px
-
-                  h3
-
-                  .filter__squareinput
-                     input
-
-               .filter__floors
-
-                  .filter__floorstaitel
-
-                  .filter__floorscheckbox
-                     p
-
-               .filter__button
