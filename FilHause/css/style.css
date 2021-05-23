@@ -64,6 +64,7 @@ body {
 
 .container {
   max-width: 1152px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -406,7 +407,6 @@ body {
 }
 
 .filter .filter__sqaretext {
-  font-size: 18px;
   color: #272b34;
   font-family: Akrobat;
   font-weight: normal;
@@ -437,7 +437,6 @@ body {
 }
 
 .filter .filter__squaretitle {
-  font-size: 24px;
   margin-bottom: 12px;
   font-family: Akrobat;
   font-weight: normal;
@@ -566,6 +565,7 @@ body {
 }
 
 .card__data .card__params .card__square {
+  margin-right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,7 +579,7 @@ body {
 }
 
 .card__data .card__params .card__square img {
-  margin-right: 12px;
+  margin-right: 28px;
 }
 
 .card__data .card__praise {
@@ -937,7 +937,7 @@ body {
   }
 
   .content .content__title h2 {
-    font-size: calc(24px + 40 * (100vw  / 1152));
+    font-size: calc(32px + 16 * (100vw  / 1152));
   }
 
   .content .content__title .content__button input {
@@ -948,8 +948,20 @@ body {
     font-size: calc(12px + 10 * (100vw  / 1152));
   }
 
+  .filter .filter__floorscheckbox p label {
+    font-size: calc(14px + 8 * (100vw  / 1152));
+  }
+
+  .filter .filter__sqaretext {
+    font-size: calc(14px + 4 * (100vw  / 1152));
+  }
+
+  .filter .filter__squaretitle {
+    font-size: calc(18px + 4 * (100vw  / 1152));
+  }
+
   .card__data .card__params a {
-    font-size: calc(30px + 2 * (100vw  / 1152));
+    font-size: calc(28px + 4 * (100vw  / 1152));
   }
 
   .card__data .card__praise .Card__sum p {
@@ -962,10 +974,6 @@ body {
 }
 
 @media (max-width: 1084px) {
-  .content .content__title h2 {
-    margin-right: 150px;
-  }
-
   .content .content__project {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1028,7 +1036,7 @@ body {
             align-items: flex-end;
   }
 
-  .content .content__project .content__filter .filter__floors .filter__floorscheckbox p label:before {
+  .content .content__project .content__filter .filter__floors .filter__floorscheckbox p label::before {
     margin-right: 10px;
   }
 
@@ -1043,10 +1051,6 @@ body {
 }
 
 @media (max-width: 832px) {
-  .container .container__titel .titel__text h1 {
-    font-size: 64px;
-  }
-
   .content .content__card .content__cardsection {
     max-width: 100%;
     margin-right: 0;
@@ -1054,6 +1058,25 @@ body {
 
   .content .content__card .content__cardsection .slick-list {
     max-height: 350px;
+  }
+
+  .content .content__card .content__cardsection .card__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .content .content__card .content__cardsection .card__data .card__params a {
+    margin-right: 42px;
+  }
+
+  .content .content__card .content__cardsection .card__data .card__praise h4 {
+    margin-right: 42px;
   }
 
   .content .content__project .content__filter .filter__block .filter__floors .filter__floorstaitel {
@@ -1075,7 +1098,7 @@ body {
   }
 
   .content .content__title h2 {
-    font-size: calc(24px + 68 * ((100vw - 320px) / 1152));
+    font-size: calc(32px + 27.2 * ((100vw - 320px) / 1152));
   }
 
   .content .content__title .content__button input {
@@ -1086,8 +1109,20 @@ body {
     font-size: calc(12px + 17 * ((100vw - 320px) / 1152));
   }
 
+  .filter .filter__floorscheckbox p label {
+    font-size: calc(14px + 13.6 * ((100vw - 320px) / 1152));
+  }
+
+  .filter .filter__sqaretext {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1152));
+  }
+
+  .filter .filter__squaretitle {
+    font-size: calc(18px + 6.8 * ((100vw - 320px) / 1152));
+  }
+
   .card__data .card__params a {
-    font-size: calc(30px + 3.4 * ((100vw - 320px) / 1152));
+    font-size: calc(28px + 6.8 * ((100vw - 320px) / 1152));
   }
 
   .card__data .card__praise .Card__sum p {
@@ -1100,6 +1135,10 @@ body {
 
   .container .container__contactsheader .contacts__link .contacts__phone a span {
     font-size: 0;
+  }
+
+  .container .container__titel {
+    margin-bottom: 32px;
   }
 
   .container .container__titel .titel__slaider {
@@ -1128,10 +1167,6 @@ body {
     display: none;
   }
 
-  .container .content .content__title h2 {
-    font-size: calc( 24px + ((36 - 24)+((36 - 24)*0.7)) * ((100vw - 320px) / 1152));
-  }
-
   .container .content .content__project .content__filter {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1156,6 +1191,74 @@ body {
   .container .content .content__project .content__filter .filter__button {
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+}
+
+@media (max-width: 570px) {
+  .container .content .content__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .container .content .content__title h2 {
+    margin-bottom: 32px;
+  }
+
+  .container .content .content__title .content__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+
+  .container .content .content__title .content__button::after {
+    content: '';
+    z-index: 10;
+    width: 25px;
+    height: 28px;
+    background-image: url(../img/icons/filter.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: red;
+  }
+
+  .container .content .content__title .content__button:hover::after {
+    background-image: url(../img/icons/filterHover.svg);
+    cursor: pointer;
+  }
+
+  .container .content .content__project .content__filter .filter__square {
+    margin-right: 24px;
+  }
+
+  .container .content .content__project .content__filter .filter__square .filter__squaretitle {
+    margin-bottom: 12px;
+  }
+
+  .container .content .content__project .content__filter .filter__floors {
+    margin-right: 0px;
+  }
+
+  .container .content .content__project .content__filter .filter__floors .filter__floorscheckbox p {
+    margin-right: 0;
+  }
+
+  .container .content .content__project .content__filter .filter__button {
+    margin-top: 32px;
+    margin-left: auto;
+  }
+
+  .container .content .content__project .content__filter .filter__button input {
+    padding-left: 42px;
+    padding-right: 42px;
   }
 }
 

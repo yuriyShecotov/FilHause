@@ -3,7 +3,7 @@
       .content__title
          // justify-content: flex-start
          h2
-            margin-right: 150px
+            // margin-right: 150px
       .content__project
          flex-wrap: wrap
          .content__filter
@@ -36,7 +36,7 @@
                      padding: 0
                      display: flex
                      align-items: flex-end
-                     label:before
+                     label::before
                         margin-right: 10px
                   p:nth-child(odd)
                      margin-right: 24px
@@ -49,7 +49,7 @@
       .container__titel
          .titel__text
             h1
-               font-size: 64px
+
             p
 
    .content
@@ -59,6 +59,16 @@
             margin-right: 0
             .slick-list
                max-height: 350px
+            .card__data
+               display: flex
+               flex-wrap: wrap
+               justify-content: space-between
+               .card__params
+                  a
+                     margin-right: 42px
+               .card__praise
+                  h4
+                     margin-right: 42px
       .content__project
          .content__filter
             .filter__block
@@ -77,6 +87,7 @@
                   span
                      font-size: 0
       .container__titel
+         margin-bottom: 32px
          .titel__slaider
             display: none
       .content     
@@ -89,6 +100,8 @@
                      display: block
                      p:nth-child(1)
                         margin-bottom: 12px
+         .content__card
+            .card__data
 @media ( max-width: 610px )
    .container
       .container__contactsheader
@@ -103,7 +116,6 @@
       .content
          .content__title
             h2
-                font-size: calc( 24px + ((36 - 24)+((36 - 24)*0.7)) * ((100vw - 320px) / 1152))
          .content__project
             .content__filter
                flex-wrap: wrap
@@ -118,3 +130,45 @@
                   margin-right: 32px
                .filter__button
                   align-self: flex-end
+@media ( max-width: 570px )
+   .container
+      .content
+         .content__title
+            flex-direction: column
+            align-items: flex-start
+            h2
+               margin-bottom: 32px
+            .content__button
+               display: flex
+               justify-content: space-between
+               width: 100%
+            .content__button::after
+               content: ''
+               z-index: 10
+               width: 25px
+               height: 28px
+               background-image: url(../img/icons/filter.svg)
+               background-size: contain
+               background-repeat: no-repeat
+               color: red
+            .content__button:hover::after
+               background-image: url(../img/icons/filterHover.svg)
+               cursor: pointer
+         .content__project
+            .content__filter
+               // display: none
+               .filter__square
+                  margin-right: 24px
+                  .filter__squaretitle
+                     margin-bottom: 12px
+               .filter__floors
+                  margin-right: 0px
+                  .filter__floorscheckbox
+                     p
+                        margin-right: 0
+               .filter__button
+                  margin-top: 32px
+                  margin-left: auto
+                  input
+                     padding-left: 42px
+                     padding-right: 42px

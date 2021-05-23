@@ -21,6 +21,8 @@
     margin-bottom: 32px
     margin-left: 42px
     p
+      label
+        @include aFont(22, 14)
       // padding-bottom: 5px
     input[type="checkbox"]
       position: absolute
@@ -61,8 +63,7 @@
     font-weight: normal
   .filter__square
   .filter__sqaretext
-
-    font-size: 18px
+    @include aFont(18, 14)
     color: $light_black
     +font(normal)
   .filter__squareinput
@@ -81,6 +82,6 @@
       border: 2px solid $light_grin_Hover
 
   .filter__squaretitle
-    font-size: 24px
+    @include aFont(22, 18)
     margin-bottom: 12px
     +font(normal)
