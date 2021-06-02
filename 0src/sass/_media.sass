@@ -1,20 +1,16 @@
 @media ( max-width: 1084px )
    .content
       .content__title
-         // justify-content: flex-start
          h2
-            // margin-right: 150px
       .content__project
          flex-wrap: wrap
          .content__filter
             display: flex
             align-items: flex-end
             justify-content: space-between
-            // align-items: flex-end
             width: 100%
             margin-right: 0
             margin-bottom: 64px
-
             .filter__square
                margin-right: 64px
                .filter__squareinput
@@ -24,8 +20,6 @@
                margin-top: 0px
                display: flex
                flex-direction: column
-               // width: 100%
-
                .filter__floorstaitel
                   margin-bottom: 14px
                .filter__floorscheckbox
@@ -49,19 +43,16 @@
       .container__titel
          .titel__text
             h1
-
             p
-
    .content
       .content__card
          .content__cardsection
             max-width: 100%
             margin-right: 0
             .slick-list
-               max-height: 350px
+               max-height: 400px
             .card__data
                display: flex
-               flex-wrap: wrap
                justify-content: space-between
                .card__params
                   a
@@ -72,7 +63,6 @@
       .content__project
          .content__filter
             .filter__block
-               // flex-wrap: wrap
                .filter__floors
                   .filter__floorstaitel
                      font-size: 0
@@ -90,7 +80,11 @@
          margin-bottom: 32px
          .titel__slaider
             display: none
-      .content     
+      .content
+         .content__card
+            .content__cardsection
+               .slick-list
+                  max-height: 350px     
          .content__project
             .content__filter
                .filter__floors
@@ -100,8 +94,10 @@
                      display: block
                      p:nth-child(1)
                         margin-bottom: 12px
+            .filter__button
+               margin-left: 22px
          .content__card
-            .card__data
+            .card__data            
 @media ( max-width: 610px )
    .container
       .container__contactsheader
@@ -114,8 +110,6 @@
          .titel__slaider
             display: none
       .content
-         .content__title
-            h2
          .content__project
             .content__filter
                flex-wrap: wrap
@@ -133,6 +127,10 @@
 @media ( max-width: 570px )
    .container
       .content
+         .content__card
+            .content__cardsection
+               .slick-list
+                  max-height: 250px 
          .content__title
             flex-direction: column
             align-items: flex-start
@@ -165,10 +163,47 @@
                   margin-right: 0px
                   .filter__floorscheckbox
                      p
-                        margin-right: 0
+                        margin-right: 0px
                .filter__button
                   margin-top: 32px
-                  margin-left: auto
+                  // margin-left: auto
                   input
-                     padding-left: 42px
-                     padding-right: 42px
+                     padding-left: 32px
+                     padding-right: 32px
+@media ( max-width: 475px )
+   .container
+      .container__contactsheader
+         .contacts__link
+            .contacts__socialnetwork
+               display: none
+      .content
+         .content__card
+            .content__cardsection
+               .slick-list
+                  max-height: 200px 
+         .card__data
+            .card__params
+               a
+                  font-size: 22px
+               .card__square
+                  p
+                     font-size: 16px
+                  .card__squareicon
+            .card__praise
+               .Card__sum
+                  p
+                     font-size: 16px
+         .content__project
+            .content__filter
+               .filter__square
+               .filter__floors
+               .filter__button
+                  // margin-top: 32px
+                  margin-left: auto
+@media ( max-width: 377px )
+   .container
+      .content
+         .content__card
+            .content__cardsection
+               .slick-list
+                  max-height: 180px 

@@ -67,39 +67,39 @@
 			button
 				border: 3px solid $light_grin
 .card__data
-	
+	display: flex
+	justify-content: space-between
 	.card__params
-		display: flex
-		justify-content: space-between
+		// display: flex
+		// justify-content: space-between
 		margin-bottom: 12px
 		a
 			@include aFont(32, 28)
 			color: $light_black
 			text-transform: uppercase
-			text-decoration: none
+			text-decoration: non
 		a:hover
 			color: $light_grin_Hover
 		.card__square
-			margin-right: 40px
+			// margin-right: 30px
 			display: flex
+			align-items: center
 			p
-				font-size: 18px
-				color: $light_black
-				+font(bold)
-			img
-				margin-right: 28px
+				@include aFont(22, 18)
+			.card__squareicon
+				width: 32px
+				height: 32px
+				margin-right: 18px
 	.card__praise
 		display: flex
 		justify-content: space-between
 		.Card__sum
 			p
-				@include aFont(22, 20)
+				@include aFont(22, 18)
 				display: flex
 				justify-content: space-between
+				padding-top: 4px
 				span
 					margin-right: 12px
 				span:last-child
 					margin-right: 0
-		h4
-			@include aFont(32, 30)
-			+font(normal)
