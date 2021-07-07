@@ -19,4 +19,31 @@ $(document).ready(function () {
 		prevArrow: '#prev',
 		nextArrow: '#next'
 	});
+	// $('.').click(function(){
+	// 		$('.content__filter').slideToggle(1000);
+	// 	});
 });
+(function(){
+	let filterButton = document.getElementsByClassName('content__buttonfilter');
+	for(let i = 0; i < filterButton.length; i++){
+		filterButton[i].addEventListener('click',function(){
+			this.classList.toggle('active');
+			var filter = document.getElementsByClassName('filter');
+			filter[i].style.display = (filter[i].style.display == 'none') ? 'flex' : 'none'
+			
+		});
+	}
+	if(matchMedia){
+		let screen = window.matchMedia("(max-width:570px)");
+		var filter = document.getElementsByClassName('filter');
+		screen.addListener(chenges);	
+		chenges(screen);
+	}
+	function chenges(screen) {
+		if(screen.matches){
+			filter[0].style.display = 'none';
+		}else{
+			filter[0].style.display = '';
+		}
+	}
+})();

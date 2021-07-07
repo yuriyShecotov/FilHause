@@ -134,27 +134,28 @@
          .content__title
             flex-direction: column
             align-items: flex-start
+            align-items: stretch
             h2
                margin-bottom: 32px
-            .content__button
+            .content__buttonblock
                display: flex
                justify-content: space-between
-               width: 100%
-            .content__button::after
-               content: ''
-               z-index: 10
-               width: 25px
-               height: 28px
-               background-image: url(../img/icons/filter.svg)
-               background-size: contain
-               background-repeat: no-repeat
-               color: red
-            .content__button:hover::after
-               background-image: url(../img/icons/filterHover.svg)
-               cursor: pointer
+               .content__button
+               .content__buttonfilter
+                  z-index: 10
+                  width: 25px
+                  height: 28px
+                  background-image: url(../img/icons/filter.svg)
+                  background-size: contain
+                  background-repeat: no-repeat
+                  color: red
+                  pointer-events: all
+               .content__buttonfilter:hover
+                  background-image: url(../img/icons/filterHover.svg)
+                  cursor: pointer
          .content__project
             .content__filter
-               // display: none
+               display: none
                .filter__square
                   margin-right: 24px
                   .filter__squaretitle
@@ -170,7 +171,7 @@
                   input
                      padding-left: 32px
                      padding-right: 32px
-@media ( max-width: 475px )
+@media ( max-width: 500px )
    .container
       .container__contactsheader
          .contacts__link

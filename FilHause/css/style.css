@@ -444,6 +444,17 @@ body {
   font-weight: normal;
 }
 
+.filter_active {
+  color: #ff0404;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter_deactivated {
+  display: none;
+}
+
 .content__card {
   margin-bottom: 32px;
   display: -webkit-box;
@@ -1212,24 +1223,25 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 
   .container .content .content__title h2 {
     margin-bottom: 32px;
   }
 
-  .container .content .content__title .content__button {
+  .container .content .content__title .content__buttonblock {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
   }
 
-  .container .content .content__title .content__button::after {
-    content: '';
+  .container .content .content__title .content__buttonblock .content__buttonfilter {
     z-index: 10;
     width: 25px;
     height: 28px;
@@ -1237,11 +1249,16 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     color: red;
+    pointer-events: all;
   }
 
-  .container .content .content__title .content__button:hover::after {
+  .container .content .content__title .content__buttonblock .content__buttonfilter:hover {
     background-image: url(../img/icons/filterHover.svg);
     cursor: pointer;
+  }
+
+  .container .content .content__project .content__filter {
+    display: none;
   }
 
   .container .content .content__project .content__filter .filter__square {
@@ -1270,7 +1287,7 @@ body {
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
   .container .container__contactsheader .contacts__link .contacts__socialnetwork {
     display: none;
   }
