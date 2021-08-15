@@ -19,9 +19,23 @@ $(document).ready(function () {
 		prevArrow: '#prev',
 		nextArrow: '#next'
 	});
-	// $('.').click(function(){
-	// 		$('.content__filter').slideToggle(1000);
-	// 	});
+	if(matchMedia){
+		var screenSlider = window.matchMedia("(max-width:1084px)");
+		screenSlider.addListener(equipmentSlider);
+		equipmentSlider(screenSlider);
+	}
+	function equipmentSlider(screenSlider){
+		if(screenSlider.matches){
+			$('.equipment__blockslider').slick({
+				adaptiveHeight: true,
+				infinite: false,
+				prevArrow: '#equipmentPrev',
+				nextArrow: '#equipmentNext'
+			});
+		}else{
+			$('.equipment__blockslider').slick('unslick');
+		}
+	}
 });
 (function(){
 	let filterButton = document.getElementsByClassName('content__buttonfilter');
