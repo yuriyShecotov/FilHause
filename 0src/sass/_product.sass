@@ -86,13 +86,16 @@
         border: 0
         padding: 0
         color: $light_black
-
+        border: 1px solid $grayheader
+        padding: 3px 22px
+        border-radius: 5px
         font-weight: 400
         cursor: pointer
         margin-bottom: 32px
         margin-right: 24px
     .slick-disabled
         color: $light_grin
+        border-color: $light_grin_Hover
 
     .productcontainer__next
         @include aFont(48, 24)
@@ -146,7 +149,7 @@
     h3
         @include aFont(64, 32)
         font-weight: 300
-        margin-bottom: 12px
+        margin-bottom: 32px
         color: $light_black
     .equipment__slider
         .equipment__sliderbutton
@@ -159,6 +162,7 @@
                 border: 0
                 padding: 0
                 color: $light_black
+                margin-bottom: 24px
             button:nth-child(2)
                 margin-right: 324px
         .equipment__blockslider

@@ -25,7 +25,7 @@ $(document).ready(function () {
 		nextArrow: '#next'
 	});
 	if(matchMedia){
-		var screenSlider = window.matchMedia("(max-width:1084px)");
+		var screenSlider = window.matchMedia("(max-width:832px)");
 		screenSlider.addListener(equipmentSlider);
 		equipmentSlider(screenSlider);
 	}

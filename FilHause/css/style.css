@@ -779,6 +779,9 @@ body {
   border: 0;
   padding: 0;
   color: #272b34;
+  border: 1px solid #f1f1f1;
+  padding: 3px 22px;
+  border-radius: 5px;
   font-weight: 400;
   cursor: pointer;
   margin-bottom: 32px;
@@ -787,6 +790,7 @@ body {
 
 .productcontainer__view .slick-disabled {
   color: #5DAC19;
+  border-color: #5eac19c7;
 }
 
 .productcontainer__view .productcontainer__slider {
@@ -875,7 +879,7 @@ body {
 
 .equipment h3 {
   font-weight: 300;
-  margin-bottom: 12px;
+  margin-bottom: 32px;
   color: #272b34;
 }
 
@@ -894,6 +898,7 @@ body {
   border: 0;
   padding: 0;
   color: #272b34;
+  margin-bottom: 24px;
 }
 
 .equipment .equipment__slider .equipment__sliderbutton button:nth-child(2) {
@@ -1273,24 +1278,6 @@ body {
   .productcontainer .productcontainer__card .card__specifications .card__block3:first-child {
     margin-bottom: 18px;
   }
-
-  .productcontainer .equipment .equipment__slider {
-    min-width: 0;
-  }
-
-  .productcontainer .equipment .equipment__slider .equipment__blockslider {
-    min-width: 0;
-  }
-
-  .productcontainer .equipment .equipment__slider .equipment__blockslider .slick-list {
-    overflow: hidden;
-  }
-
-  .productcontainer .equipment .equipment__slider .equipment__blockslider .slick-track {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 @media (max-width: 832px) {
@@ -1326,6 +1313,53 @@ body {
 
   .content .content__project .content__filter .filter__block .filter__floors .filter__floorscheckbox {
     display: block;
+  }
+
+  .productcontainer .equipment .equipment__slider {
+    min-width: 0;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__sliderbutton {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__sliderbutton button {
+    border: 1px solid #f1f1f1;
+    padding: 3px 22px;
+    border-radius: 5px;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__sliderbutton .slick-disabled {
+    color: #5DAC19;
+    border-color: #5eac19c7;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__sliderbutton .equipment__balk {
+    margin-right: 32px;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__sliderbutton .equipment__log {
+    margin-right: 0;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__blockslider {
+    min-width: 0;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__blockslider .slick-list {
+    overflow: hidden;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__blockslider .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .productcontainer .equipment .equipment__slider .equipment__blockslider .slick-track dl {
+    padding: 0 10%;
   }
 }
 

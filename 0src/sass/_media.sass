@@ -58,20 +58,7 @@
                width: auto
             .card__square div:first-child, .card__block1:first-child, .card__block2:first-child, .card__block3:first-child
                margin-bottom: 18px
-      .equipment
-         .equipment__slider
-            min-width: 0
-            .equipment__sliderbutton
-               .equipment__balk
-               .equipment__log
-            .equipment__blockslider
-               min-width: 0
-               .slick-list
-                  overflow: hidden
-               .slick-track
-                  display: flex
-                  .equipment__blockbalk
-                  .equipment__blocklog
+      
 @media ( max-width: 832px )
    .container
       .container__titel
@@ -102,6 +89,33 @@
                      font-size: 0
                   .filter__floorscheckbox
                      display: block
+   .productcontainer
+      .equipment
+         .equipment__slider
+            min-width: 0
+            .equipment__sliderbutton
+               justify-content: flex-start
+               button
+                  border: 1px solid $grayheader
+                  padding: 3px 22px
+                  border-radius: 5px
+               .slick-disabled
+                  color: $light_grin
+                  border-color: $light_grin_Hover
+               .equipment__balk
+                  margin-right: 32px
+               .equipment__log
+                  margin-right: 0
+            .equipment__blockslider
+               min-width: 0
+               .slick-list
+                  overflow: hidden
+               .slick-track
+                  display: flex
+                  .equipment__blockbalk
+                  .equipment__blocklog
+                  dl
+                     padding: 0 10%
 @media ( max-width: 768px )
    .container
       .container__contactsheader
