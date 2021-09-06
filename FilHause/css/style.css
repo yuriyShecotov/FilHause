@@ -646,7 +646,7 @@ body {
   text-transform: capitalize;
   margin: 0;
   font-weight: normal;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 
 .productcontainer .productcontainer__card {
@@ -691,7 +691,7 @@ body {
 }
 
 .productcontainer .productcontainer__card .card__price .card__priceblok p {
-  margin-right: 94px;
+  margin-right: 64px;
 }
 
 .productcontainer .productcontainer__card .card__specifications {
@@ -730,10 +730,6 @@ body {
 .productcontainer .productcontainer__card .card__specifications .card__block3 svg {
   width: 48px;
   height: 48px;
-}
-
-.productcontainer .productcontainer__card .card__specifications .card__square {
-  font-weight: bold;
 }
 
 .productcontainer .productcontainer__card .card__specifications .card__square svg {
@@ -863,6 +859,8 @@ body {
   border-radius: 5px;
   padding: 9px 12px;
   margin-left: 50%;
+  text-decoration: none;
+  display: inline-block;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -992,6 +990,14 @@ body {
   background-color: #272b34;
   border-color: #272b34;
   padding: 0;
+  width: 24px;
+  height: 24px;
+  fill: #5DAC19;
+  cursor: pointer;
+}
+
+.popap:target .popap__body .popap__content .popap__close:hover {
+  fill: #f1f1f1;
 }
 
 .popap:target .popap__body .popap__content .popap__title {
@@ -1108,47 +1114,47 @@ body {
   }
 
   .productcontainer .productcontainer__title h1 {
-    font-size: calc(42px + 22 * (100vw  / 1152));
+    font-size: calc(12px + 6 * (100vw  / 1152));
   }
 
   .productcontainer .productcontainer__card .card__price h2 {
-    font-size: calc(24px + 24 * (100vw  / 1152));
+    font-size: calc(24px + 8 * (100vw  / 1152));
   }
 
   .productcontainer .productcontainer__card .card__price .card__priceblok p {
-    font-size: calc(18px + 6 * (100vw  / 1152));
+    font-size: calc(14px + 8 * (100vw  / 1152));
   }
 
   .productcontainer .productcontainer__card .card__specifications .card__square {
-    font-size: calc(18px + 6 * (100vw  / 1152));
+    font-size: calc(24px + 8 * (100vw  / 1152));
   }
 
   .productcontainer__view button {
-    font-size: calc(24px + 24 * (100vw  / 1152));
+    font-size: calc(18px + 14 * (100vw  / 1152));
   }
 
   .productcontainer__view .productcontainer__next {
-    font-size: calc(24px + 24 * (100vw  / 1152));
+    font-size: calc(18px + 14 * (100vw  / 1152));
   }
 
   .productcontainer__view .productcontainer__edit {
-    font-size: calc(18px + 6 * (100vw  / 1152));
+    font-size: calc(14px + 8 * (100vw  / 1152));
   }
 
   .equipment h3 {
-    font-size: calc(32px + 32 * (100vw  / 1152));
+    font-size: calc(32px + 24 * (100vw  / 1152));
   }
 
   .equipment .equipment__slider .equipment__sliderbutton button {
-    font-size: calc(24px + 24 * (100vw  / 1152));
+    font-size: calc(18px + 14 * (100vw  / 1152));
   }
 
   .equipment .equipment__slider .equipment__blockslider dl dt {
-    font-size: calc(24px + 12 * (100vw  / 1152));
+    font-size: calc(18px + 14 * (100vw  / 1152));
   }
 
   .equipment .equipment__slider .equipment__blockslider dl dd {
-    font-size: calc(18px + 6 * (100vw  / 1152));
+    font-size: calc(14px + 8 * (100vw  / 1152));
   }
 
   .popap:target .popap__body .popap__content .popap__title h2 {
@@ -1409,47 +1415,47 @@ body {
   }
 
   .productcontainer .productcontainer__title h1 {
-    font-size: calc(42px + 37.4 * ((100vw - 320px) / 1152));
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1152));
   }
 
   .productcontainer .productcontainer__card .card__price h2 {
-    font-size: calc(24px + 40.8 * ((100vw - 320px) / 1152));
+    font-size: calc(24px + 13.6 * ((100vw - 320px) / 1152));
   }
 
   .productcontainer .productcontainer__card .card__price .card__priceblok p {
-    font-size: calc(18px + 10.2 * ((100vw - 320px) / 1152));
+    font-size: calc(14px + 13.6 * ((100vw - 320px) / 1152));
   }
 
   .productcontainer .productcontainer__card .card__specifications .card__square {
-    font-size: calc(18px + 10.2 * ((100vw - 320px) / 1152));
+    font-size: calc(24px + 13.6 * ((100vw - 320px) / 1152));
   }
 
   .productcontainer__view button {
-    font-size: calc(24px + 40.8 * ((100vw - 320px) / 1152));
+    font-size: calc(18px + 23.8 * ((100vw - 320px) / 1152));
   }
 
   .productcontainer__view .productcontainer__next {
-    font-size: calc(24px + 40.8 * ((100vw - 320px) / 1152));
+    font-size: calc(18px + 23.8 * ((100vw - 320px) / 1152));
   }
 
   .productcontainer__view .productcontainer__edit {
-    font-size: calc(18px + 10.2 * ((100vw - 320px) / 1152));
+    font-size: calc(14px + 13.6 * ((100vw - 320px) / 1152));
   }
 
   .equipment h3 {
-    font-size: calc(32px + 54.4 * ((100vw - 320px) / 1152));
+    font-size: calc(32px + 40.8 * ((100vw - 320px) / 1152));
   }
 
   .equipment .equipment__slider .equipment__sliderbutton button {
-    font-size: calc(24px + 40.8 * ((100vw - 320px) / 1152));
+    font-size: calc(18px + 23.8 * ((100vw - 320px) / 1152));
   }
 
   .equipment .equipment__slider .equipment__blockslider dl dt {
-    font-size: calc(24px + 20.4 * ((100vw - 320px) / 1152));
+    font-size: calc(18px + 23.8 * ((100vw - 320px) / 1152));
   }
 
   .equipment .equipment__slider .equipment__blockslider dl dd {
-    font-size: calc(18px + 10.2 * ((100vw - 320px) / 1152));
+    font-size: calc(14px + 13.6 * ((100vw - 320px) / 1152));
   }
 
   .container .container__contactsheader .contacts__link .contacts__phone a span {

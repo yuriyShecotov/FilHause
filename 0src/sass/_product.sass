@@ -5,11 +5,11 @@
     .productcontainer__title
         margin: 0px 16px 64px 16px
         h1
-            @include aFont(64, 42)
+            @include aFont(18, 12)
             text-transform: capitalize
             margin: 0
             font-weight: normal
-            margin-bottom: 24px
+            margin-bottom: 8px
             // letter-spacing: 8px
             // font-feature-settings: 'salt'  
     .productcontainer__card
@@ -33,15 +33,15 @@
             margin-top: 32px
             // margin-left: 16px
             h2
-                @include aFont(48, 24)
+                @include aFont(32, 24)
                 font-weight: normal
                 text-transform: uppercase
             .card__priceblok
                 display: flex
                 padding-left: 48px
                 p
-                    @include aFont(24, 18)
-                    margin-right: 94px
+                    @include aFont(22, 14)
+                    margin-right: 64px
                 // justify-content: flex-end
 
         .card__specifications
@@ -61,8 +61,8 @@
                     width: 48px
                     height: 48px
             .card__square
-                @include aFont(24, 18)
-                font-weight: bold
+                @include aFont(32, 24)
+                // font-weight: bold
                 .card__squareicon
                     // margin-right: 16px
                 svg
@@ -80,7 +80,7 @@
     margin: 0px 16px 0px 16px
 
     button
-        @include aFont(48, 24)
+        @include aFont(32,18)
         font-family: Akrobat
         background-color: transparent
         border: 0
@@ -98,7 +98,7 @@
         border-color: $light_grin_Hover
 
     .productcontainer__next
-        @include aFont(48, 24)
+        @include aFont(32, 18)
     .productcontainer__slider
         min-width: 0
         margin-bottom: 32px
@@ -133,12 +133,14 @@
                             width: 100%
                             object-fit: cover
     .productcontainer__edit
-        @include aFont(24, 18)
+        @include aFont(22, 14)
         color: $light_grin
         border: 2px solid $light_grin
         border-radius: 5px
         padding: 9px 12px
         margin-left: 50%
+        text-decoration: none
+        display: inline-block
         transform: translateX(-50%)
     .productcontainer__edit:hover
         color: $light_grin_Hover
@@ -147,7 +149,7 @@
 .equipment
     margin: 0 16px
     h3
-        @include aFont(64, 32)
+        @include aFont(56, 32)
         font-weight: 300
         margin-bottom: 32px
         color: $light_black
@@ -156,7 +158,7 @@
             display: flex
             justify-content: space-between
             button
-                @include aFont(48, 24)
+                @include aFont(32, 18)
                 font-family: Akrobat
                 background-color: transparent
                 border: 0
@@ -171,10 +173,10 @@
             dl
                 dt
                     font-family: Akrobat
-                    @include aFont(36, 24)
+                    @include aFont(32, 18)
                     margin-bottom: 8px
                 dd
                     font-family: Akrobat
-                    @include aFont(24, 18)
+                    @include aFont(22, 14)
                     margin-left: 42px
                     margin-bottom: 8px
