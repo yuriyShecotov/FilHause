@@ -181,6 +181,8 @@ body {
 
 .container__titel .titel__slaider .slaider__img {
   position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .container__titel .titel__slaider .slaider__img img {
@@ -291,13 +293,12 @@ body {
 }
 
 .content .content__title .content__button .content__buttonpopap {
-  color: #E5E5E5;
-  background-color: #5DAC19;
+  color: #5DAC19;
   border-radius: 5px;
-  border: 1px solid;
+  border: 2px solid;
   padding: 8px 26px;
   font-family: Akrobat;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -691,7 +692,7 @@ body {
 }
 
 .productcontainer .productcontainer__card .card__price .card__priceblok p {
-  margin-right: 64px;
+  margin-right: 10%;
 }
 
 .productcontainer .productcontainer__card .card__specifications {
@@ -784,9 +785,14 @@ body {
   margin-right: 24px;
 }
 
+.productcontainer__view button:hover {
+  color: #5eac19c7;
+}
+
 .productcontainer__view .slick-disabled {
   color: #5DAC19;
   border-color: #5eac19c7;
+  cursor: default;
 }
 
 .productcontainer__view .productcontainer__slider {
@@ -1126,7 +1132,7 @@ body {
   }
 
   .productcontainer .productcontainer__card .card__specifications .card__square {
-    font-size: calc(24px + 8 * (100vw  / 1152));
+    font-size: calc(18px + 14 * (100vw  / 1152));
   }
 
   .productcontainer__view button {
@@ -1427,7 +1433,7 @@ body {
   }
 
   .productcontainer .productcontainer__card .card__specifications .card__square {
-    font-size: calc(24px + 13.6 * ((100vw - 320px) / 1152));
+    font-size: calc(18px + 23.8 * ((100vw - 320px) / 1152));
   }
 
   .productcontainer__view button {

@@ -41,7 +41,7 @@
                 padding-left: 48px
                 p
                     @include aFont(22, 14)
-                    margin-right: 64px
+                    margin-right: 10%
                 // justify-content: flex-end
 
         .card__specifications
@@ -61,7 +61,7 @@
                     width: 48px
                     height: 48px
             .card__square
-                @include aFont(32, 24)
+                @include aFont(32, 18)
                 // font-weight: bold
                 .card__squareicon
                     // margin-right: 16px
@@ -93,9 +93,13 @@
         cursor: pointer
         margin-bottom: 32px
         margin-right: 24px
+    button:hover
+        // border-color: $light_grin_Hover
+        color: $light_grin_Hover
     .slick-disabled
         color: $light_grin
         border-color: $light_grin_Hover
+        cursor: default
 
     .productcontainer__next
         @include aFont(32, 18)

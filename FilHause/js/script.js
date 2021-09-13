@@ -7,16 +7,19 @@
 
 $(document).ready(function () {
 	$('.titel__slaider').slick({
+		autoplay: true,
+		autoplaySpeed: 4000,
 		dots: true,
 		infinite: true,
-		speed: 500,
-		cssEase: 'linear'
+		speed: 2000,
+		cssEase: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+		arrows: false
 	});
 	$('.card__slider').slick({
 		dots: true,
 		infinite: true,
 		speed: 500,
-		cssEase: 'linear'
+		cssEase: 'linear',
 	});
 	$('.productcontainer__slider').slick({
 		adaptiveHeight: true,
